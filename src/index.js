@@ -1,4 +1,5 @@
-import ReactDOM from 'react-router-dom'
-import App from './App.js'
+import ReactDOM from "react-dom";
+import { App } from "./App";
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+const app = document.getElementById("app");
+ReactDOM.render(<App />, app);
