@@ -1,0 +1,20 @@
+{
+  "name": "starter-react",
+  "version": "1.0.0",
+  "description": "This is a boilerplate to get started easily with React Version 17 :",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WildCodeSchool/mures-p2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WildCodeSchool/mures-p2/issues"
+  },
+  "homepage": "https://github.com/WildCodeSchool/mures-p2#readme"
+}
