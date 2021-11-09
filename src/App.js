@@ -27,8 +27,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
       <Router>
+
         <div className="nav-btn">
           <button className="buttonmenu">
             <Link to="/">Home</Link>
@@ -46,8 +46,8 @@ function App() {
             <ProductScan product={product} setProduct={setProduct}/>
           </Route>
         </Switch>
-      </Router>
 
+      </Router>
       <Footer />
     </div>
   );

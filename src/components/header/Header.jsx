@@ -13,11 +13,14 @@ function Header() {
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
   };
+  const onSubmit = (products) => {
+    console.log(products);
+}
 
   
   return (
     <head className="header">
-          <Search />
+          <Search onSubmit={onSubmit}/>
         <div className="logoheader">
           <img className="imgheader" src={Cheesecake}></img>
         </div>
@@ -25,6 +28,7 @@ function Header() {
         <ul className="navbar_links">
           <li className="navbar_item slideInDown-1">
             <a href="/" className="navbar_link">
+              {/* remplacer link to a la place de href*/}
               Home
             </a>
           </li>

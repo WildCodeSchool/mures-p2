@@ -1,5 +1,8 @@
 import React from 'react';
-
+import Alternatives from "./Alternatives";
+import ProductsInfos from './ProductsInfos';
+import ProductsIngredient from './ProductsIngredient';
+import ProductsNutri from './ProductsNutri';
 import ProductsPack from "./ProductsPack"
 import ProductsProxi from './ProductsProxi';
 import "./DisplayCode.css"
@@ -11,15 +14,20 @@ function DisplayCode({product, setProduct}) {
     window.location.reload()
    }
   return (
-      <div>
-   
-        <article className='DisplayCode'> 
-        <button className="buttonmenu" onClick={reloader}>Je scanne un autre produit</button>
+    product && (
+      <main>
+      <button className="buttonmenu" onClick={reloader}>Je scanne un autre produit</button>
+        <section className='DisplayCode'> 
+          <ProductsInfos product={product}/>
+          <ProductsIngredient product={product} />
+          <ProductsNutri  product={product}/>
+          <Alternatives/>
           <ProductsPack product={product} />
           <ProductsProxi product={product} />
-        </article>        
-      </div>
-    
+        </section>        
+      </main>
+    )
+
   );
 }
 
