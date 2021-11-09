@@ -8,6 +8,7 @@ import axios from "axios";
 import DisplayScan from "./components/Scan/DisplayScan";
 import DisplayCode from "./components/api/DisplayCode";
 import Home from "./components/home/Home";
+import Contact from "./components/contact/Contact"
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
@@ -32,32 +33,22 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
       <Router>
-        <div className="nav-btn">
-          <button className="buttonmenu">
-            <Link to="/">Home</Link>
-          </button>
-          <button className="buttonmenu">
-            <Link to="/DisplayScan">Je scanne</Link>
-          </button>
-          <button>
-            <Link to="/DisplayCode">Fiche Produit</Link>
-          </button>
-        </div>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/DisplayScan">
-            <DisplayScan product={product} setProduct={setProduct}/>
-          </Route>
-          <Route path="/DisplayCode">
-            <DisplayCode product={product} />
-          </Route>
-        </Switch>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/DisplayScan">
+              <DisplayScan />
+            </Route>
+            <Route path="/DisplayCode">
+              <DisplayCode product={product} />
+            </Route>
+            <Route path="/Contact">
+              <Contact />
+            </Route>
+          </Switch>
       </Router>
-
       <Footer />
     </div>
   );
