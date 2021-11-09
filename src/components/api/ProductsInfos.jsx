@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import "./ProductsInfos.css";
-import Cereales from '../../assets/cereales-vanille-avec-quinoa.jpg'
+
 
 function ProductsInfos( {product}) {
 

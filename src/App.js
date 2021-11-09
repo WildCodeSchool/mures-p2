@@ -8,6 +8,7 @@ import axios from "axios";
 import DisplayScan from "./components/Scan/DisplayScan";
 import DisplayCode from "./components/api/DisplayCode";
 import Home from "./components/home/Home";
+import Contact from "./components/contact/Contact"
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
