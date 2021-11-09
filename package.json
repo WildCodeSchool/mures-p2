@@ -30,13 +30,12 @@
     ]
   },
   "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all"
-  ],
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    
   "devDependencies": {
-    "eslint": "^8.2.0",
-    "eslint-plugin-react": "^7.26.1",
     "prettier": "2.4.1"
   }
 }

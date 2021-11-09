@@ -6,45 +6,43 @@ import axios from 'axios';
 
 function Search() {
     
-    const [products, setProducts] = useState('');
-    const [searchTerm, setSearchTerm] = useState('');
-    const [searchTermF, setSearchTermF] = useState('');
-    
+    const [searchTerm, setSearchTerm] = useState("");
+    const [product, setProduct] = useState('')
+
+
     const handleSearchTerm = (e) => {
-        setSearchTerm(e.target.value)
+        let value = e.target.value;
+        value.length > 2 && setSearchTerm(value);
     };
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        setSearchTermF(searchTerm)
-        props.onSubmit(products)
+    const getOpenFoodFact = () => {
+    // Send the request 
+    const codebarre = 'camembert'
+    axios
+    .get(`https://world.openfoodfacts.org/cgi/search.pl?action=process&search_terms=${codebarre}`)
+    .then((response) => response.data)
+    .then((data) => {
+    setProduct(data.product)
+    console.log(data.product)
+    })
     }
-
-    const getOpenFoodFact = async () => {
-        // Send the request 
-        const url =`https://fr.openfoodfacts.org/cgi/search.pl?action=process&search_terms=${searchTerm}&json=true`
-        const response = await axios(url);
-        setProducts(response.data)
-        console.log(response.data)
-        }
-
-        useEffect(() => {
-            getOpenFoodFact();
-          }, [searchTermF]);
   
 
     return (
-        <div>
-        <form className="searchBar"action="" onSubmit={handleSubmit} >
+        <article className="searchBar">
             <input 
             type="text" 
             name="searchBar" 
             id="searchBar" 
             placeholder="Rechercher" 
-            onChange={handleSearchTerm} value={searchTerm}/>
-        <button className="searchButton" > </button>
-        </form>
-        </div>
+            onChange={handleSearchTerm}
+            />
+        <button 
+          className="searchButton"
+          type="button"
+          onClick = {getOpenFoodFact}
+          >
+        </button>
+        </article>
 
     )
 }

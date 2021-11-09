@@ -13,14 +13,11 @@ function Header() {
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
   };
-  const onSubmit = (products) => {
-    console.log(products);
-}
 
   
   return (
-    <header className="header">
-          <Search onSubmit={onSubmit}/>
+    <head className="header">
+          <Search />
         <div className="logoheader">
           <img className="imgheader" src={Cheesecake}></img>
         </div>
@@ -43,7 +40,6 @@ function Header() {
           </li>
           <li className="navbar_item slideInDown-4">
             <a href="/" className="navbar_link">
-              {/* remplacer link to a la place de href*/}
               Qui sommes nous
             </a>
           </li>
@@ -52,7 +48,7 @@ function Header() {
           <span className="burger-bar"></span>
         </button>
       </nav>
-    </header>
+    </head>
   );
 }
 export default Header;

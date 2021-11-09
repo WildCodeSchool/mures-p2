@@ -20,15 +20,17 @@ export default function ProductsProxi({ product }) {
 
 
   return (
-    <article className="products-proxi">
-
+    
+    <div className="products-proxi">
+      <div className="card">
         <h1 className="title">Où acheter</h1>
 
-        <p> <u>Magasins:</u> {product.stores} </p>
+        <p> Magasins: {product.stores} </p>
 
         <button className="map-button" onClick={handleClick}>
           Près de chez vous
         </button>
-    </article>
+      </div>
+    </div>
   );
 }
