@@ -28,22 +28,17 @@ function Search() {
   
 
     return (
-        <article className="searchBar">
+        <div>
+        <form className="searchBar"action="" onSubmit={handleSubmit} >
             <input 
             type="text" 
             name="searchBar" 
             id="searchBar" 
             placeholder="Rechercher" 
-            onChange={handleSearchTerm}
-            />
-        <button 
-          className="searchButton"
-          type="button"
-          onClick = {getOpenFoodFact}
-          >
-        </button>
-        </article>
-
+            onChange={handleSearchTerm} value={searchTerm}/>
+        <button className="searchButton" > </button>
+        </form>
+        </div>
     )
 }
 

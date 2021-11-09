@@ -32,32 +32,22 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
       <Router>
-        <div className="nav-btn">
-          <button className="buttonmenu">
-            <Link to="/">Home</Link>
-          </button>
-          <button className="buttonmenu">
-            <Link to="/DisplayScan">Je scanne</Link>
-          </button>
-          <button>
-            <Link to="/DisplayCode">Fiche Produit</Link>
-          </button>
-        </div>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/DisplayScan">
-            <DisplayScan product={product} setProduct={setProduct}/>
-          </Route>
-          <Route path="/DisplayCode">
-            <DisplayCode product={product} />
-          </Route>
-        </Switch>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/DisplayScan">
+              <DisplayScan />
+            </Route>
+            <Route path="/DisplayCode">
+              <DisplayCode product={product} />
+            </Route>
+            <Route path="/Contact">
+              <Contact />
+            </Route>
+          </Switch>
       </Router>
-
       <Footer />
     </div>
   );
