@@ -4,8 +4,6 @@ import Search from "./Search"
 import "./Header.css";
 import Cheesecake from "../../assets/Cheesecake.jpg";
 
-
-
 function Header() {
 
   const [showLinks, setShowLinks] = useState(false);
@@ -43,7 +41,7 @@ function Header() {
             </a>
           </li>
           <li className="navbar_item slideInDown-4">
-            <a href="/" className="navbar_link">
+            <a href="/Contact" className="navbar_link">
               Qui sommes nous
             </a>
           </li>

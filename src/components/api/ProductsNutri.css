@@ -28,7 +28,7 @@ td, th{
 }
 
 .caract{
-    background-color: #467302;
+    background-color: #84BF04;
     color: #FFFFFF;
     width: 110px;
 }
@@ -42,6 +42,7 @@ td, th{
 
 @media screen and (min-width: 767px){
     .nutrition{
+        margin-top: 20px;
         grid-column: 3;
         grid-row: 1;
     }

@@ -1,3 +1,15 @@
+.alternative{
+  grid-column: 1;
+  grid-row: 4;
+  width: 340px;
+  height: 250px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color:#FFDCBD ;
+  background-size: cover;
+  box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
+}
+
 h1 {
     text-align: center;
     margin: 30px;
@@ -26,17 +38,27 @@ h1 {
   }
 
   .product-btn button {
-    background-color: #467302;
-    border-radius: 10px;
-    border: 4px double #84BF04;
+    background-color: #84BF04;
+    border-radius: 30px;
+    border: 2px solid #FFFFFF;
     cursor: pointer;
-    font-size: 1rem;
     padding: 10px;
-    width: 200px;
     margin: 30px;
+    width: 180px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 500;
   }
 
   button:active {
     background-color: #84BF04;
     }
-  
+
+@media screen and (min-width: 767px){
+  .alternative{
+    margin-top: 80px;
+    grid-column: 3;
+    grid-row: 2;
+    }
+}
