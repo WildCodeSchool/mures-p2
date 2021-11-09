@@ -1,49 +1,43 @@
 import React from 'react';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Search.css";
 import axios from 'axios';
 
 
-function Search() {
-    
-    const [searchTerm, setSearchTerm] = useState("");
-    const [product, setProduct] = useState('')
-
+function Search(props) {
+    const [searchTerm, setSearchTerm] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleSearchTerm = (e) => {
-        let value = e.target.value;
-        value.length > 2 && setSearchTerm(value);
+        setSearchTerm(e.target.value)
     };
-    const getOpenFoodFact = () => {
-    // Send the request 
-    const codebarre = 'camembert'
-    axios
-    .get(`https://world.openfoodfacts.org/cgi/search.pl?action=process&search_terms=${codebarre}`)
-    .then((response) => response.data)
-    .then((data) => {
-    setProduct(data.product)
-    console.log(data.product)
-    })
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        props.onSubmit(await getOpenFoodFact())
     }
-  
+
+    const getOpenFoodFact = async () => {
+        // Send the request 
+        setIsLoading(true)
+        const url = `https://fr.openfoodfacts.org/cgi/search.pl?action=process&search_terms=${ searchTerm }&json=true`
+        const response = await axios(url);
+        setIsLoading(false)
+        return response.data.products?.[0]
+    }
 
     return (
-        <article className="searchBar">
-            <input 
-            type="text" 
-            name="searchBar" 
-            id="searchBar" 
-            placeholder="Rechercher" 
-            onChange={handleSearchTerm}
-            />
-        <button 
-          className="searchButton"
-          type="button"
-          onClick = {getOpenFoodFact}
-          >
-        </button>
-        </article>
-
+        <div>
+            <form className="searchBar" action="" onSubmit={handleSubmit} >
+                <input
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="Rechercher"
+                    onChange={handleSearchTerm} value={searchTerm} />
+                <button className={!isLoading ? "searchButton" : 'loadingButton'} > </button>
+            </form>
+        </div>
     )
 }
 
