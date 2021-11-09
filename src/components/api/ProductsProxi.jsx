@@ -25,10 +25,11 @@ export default function ProductsProxi({ product }) {
         <h1 className="title">Où acheter</h1>
 
         <p> <u>Magasins:</u> {product.stores} </p>
-
+        <div>
         <button className="map-button" onClick={handleClick}>
           Près de chez vous
         </button>
+        </div>
     </article>
   );
 }

@@ -2,7 +2,7 @@
     grid-column: 1;
     grid-row: 2;
     width: 340px;
-    height: auto;
+    height: 250px;
     margin-top: 20px;
     border-radius: 10px;
     background-color:#FFDCBD ;
@@ -27,7 +27,7 @@ td, th{
 }
 
 .caract{
-    background-color: #467302;
+    background-color: #84BF04;
     color: #FFFFFF;
     width: 100px;
 }

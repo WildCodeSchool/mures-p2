@@ -7,6 +7,8 @@ import Header from "./components/header/Header";
 import axios from "axios";
 import ProductScan from "./components/ProductScan/ProductScan";
 import Home from "./components/home/Home";
+import Contact from "./components/contact/Contact"
+
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 function App() {
