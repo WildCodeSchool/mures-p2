@@ -6,16 +6,20 @@ import "./DisplayCode.css"
 
 
 
-function DisplayCode({product}) {
+function DisplayCode({product, setProduct}) {
+  const reloader = () => {
+    window.location.reload()
+   }
   return (
-    product && (
       <div>
+   
         <article className='DisplayCode'> 
+        <button className="buttonmenu" onClick={reloader}>Je scanne un autre produit</button>
           <ProductsPack product={product} />
           <ProductsProxi product={product} />
         </article>        
       </div>
-    )
+    
   );
 }
 
