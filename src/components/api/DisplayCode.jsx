@@ -5,7 +5,7 @@ import ProductsIngredient from './ProductsIngredient';
 import ProductsNutri from './ProductsNutri';
 import ProductsPack from "./ProductsPack"
 import ProductsProxi from './ProductsProxi';
-import "./DisplayCode.css"
+import "./DisplayCode.css";
 
 
 
@@ -16,7 +16,7 @@ function DisplayCode({product, setProduct}) {
   return (
     product && (
       <main>
-      <button className="buttonmenu" onClick={reloader}>Je scanne un autre produit</button>
+      <button className="scan-again-btn" onClick={reloader}>Je scanne un autre produit</button>
         <section className='DisplayCode'> 
           <ProductsInfos product={product}/>
           <ProductsIngredient product={product} />

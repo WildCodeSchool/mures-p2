@@ -31,15 +31,6 @@ function App() {
       <Header />
       <Router>
 
-        <div className="nav-btn">
-          <button className="buttonmenu">
-            <Link to="/">Home</Link>
-          </button>
-          <button className="buttonmenu">
-            <Link to="/ProductScan">Je scanne</Link>
-          </button>
-
-        </div>
         <Switch>
           <Route exact path="/">
             <Home />

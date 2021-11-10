@@ -14,7 +14,7 @@ return (
             </div>
             <div className="buttonhome">
             <div className="wrapbutton">   
-                <Link to="/DisplayScan"><button className="buttonScan">Je scanne</button></Link>
+                <Link to="/ProductScan"><button className="buttonScan">Je scanne</button></Link>
             </div>
             <div className="wrapbutton2">
                 <Link to="/DisplayCode"><button className="buttonmenu">Fiche Produit</button></Link>
