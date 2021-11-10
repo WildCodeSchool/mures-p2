@@ -8,9 +8,12 @@ import ProductsProxi from './ProductsProxi';
 import "./DisplayCode.css"
 import axios from 'axios';
 
-function Product({ match }) {
+function Product({ match, product, setProduct }) {
   const [product, setProduct] = useState();
   const [isNotFound, setIsNotFound] = useState(false);
+  const reloader = () => {
+    window.location.reload()
+   }
 
   const { id } = match.params
 
@@ -31,38 +34,36 @@ function Product({ match }) {
     getOpenFoodFact();
   }, [id]);
 
-
-
   return (
     <div>
       <article className='DisplayCode'>
         {
           isNotFound ? <p>Aucun produit trouvé</p> :
             product && (
-              <>
-                <div>
-                  <ProductsInfos product={product} />
-                </div>
-                <div>
-                  <ProductsIngredient product={product} />
-                </div>
-                <div>
-                  <ProductsNutri product={product} />
-                </div>
-                <div>
-                  <ProductsProxi product={product} />
-                </div>
-                <div>
-                  <Alternatives product={product} />
-                </div>
-                <ProductsPack product={product} />
-                <ProductsProxi product={product} />
-              </>
+              <main>
+                <button className="buttonmenu" onClick={reloader}>Je scanne un autre produit</button>
+                <section className='DisplayCode'> 
+                  <div>
+                    <ProductsInfos product={product} />
+                  </div>
+                  <div>
+                    <ProductsIngredient product={product} />
+                  </div>
+                  <div>
+                    <ProductsNutri product={product} />
+                  </div>
+                  <div>
+                    <ProductsProxi product={product} />
+                  </div>
+                  <div>
+                    <Alternatives product={product} />
+                  </div>
+                  <ProductsPack product={product} />
+                </section>
+              </main>
             )
         }
       </article>
     </div>
-  );
-}
 
 export default Product;

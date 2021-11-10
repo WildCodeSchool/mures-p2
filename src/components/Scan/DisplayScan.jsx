@@ -3,7 +3,7 @@ import Scanner from "./Scanner";
 import Result from "./Result";
 import "./display.css";
 import axios from "axios";
-import DisplayCode from "../api/DisplayCode";
+
 
 const DisplayScan = ({setProduct, product}) => {
   const [scanning, setScanning] = useState(false);
@@ -23,10 +23,6 @@ const DisplayScan = ({setProduct, product}) => {
       });
       console.log(barcode);
   };
-
-  const goToProductPage = () =>{
-    window.location.href='./DisplayCode';
-    }
 
 
   useEffect(() => {

@@ -5,8 +5,11 @@ import axios from 'axios';
 
 
 function Search(props) {
-    const [searchTerm, setSearchTerm] = useState('');
+
     const [isLoading, setIsLoading] = useState(false);
+    const [products, setProducts] = useState('');
+    const [searchTerm, setSearchTerm] = useState('');
+    const [searchTermF, setSearchTermF] = useState('');
 
     const handleSearchTerm = (e) => {
         setSearchTerm(e.target.value)

@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
 
+
 function Header() {
   const history = useHistory();
 
@@ -14,6 +15,9 @@ function Header() {
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
   };
+  const onSubmit = (products) => {
+    console.log(products);
+}
 
   const onSubmit = (product) => {
     if (product) {
@@ -34,6 +38,7 @@ function Header() {
         <ul className="navbar_links">
           <li className="navbar_item slideInDown-1">
             <a href="/" className="navbar_link">
+              {/* remplacer link to a la place de href*/}
               Home
             </a>
           </li>
@@ -48,8 +53,7 @@ function Header() {
             </a>
           </li>
           <li className="navbar_item slideInDown-4">
-            <a href="/" className="navbar_link">
-              {/* remplacer link to a la place de href*/}
+            <a href="/Contact" className="navbar_link">
               Qui sommes nous
             </a>
           </li>

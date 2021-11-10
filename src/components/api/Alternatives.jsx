@@ -42,8 +42,7 @@ function Alternatives({ product }) {
     }, [product])
 
     return (
-        <div>
-            <article>
+            <article className="alternative">
                 <div>
                     <h1 className="text-center">Recommandation</h1>
                 </div>
@@ -72,7 +71,6 @@ function Alternatives({ product }) {
                     }
                 </div>
             </article>
-        </div>
 
     );
 }
