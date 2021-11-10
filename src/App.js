@@ -9,6 +9,7 @@ import ProductScan from "./components/ProductScan/ProductScan";
 import Home from "./components/home/Home";
 import Contact from "./components/contact/Contact";
 import Resultproduct from "./components/api/Resultproduct";
+import DisplayCode from "./components/api/DisplayCode";
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
@@ -31,13 +32,12 @@ function App() {
     <div className="App">
       <Header />
       <Router>
-<<<<<<< HEAD
           <Switch>
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/DisplayScan">
-              <DisplayScan />
+            <Route path="/ProductScan">
+              <ProductScan />
             </Route>
             <Route path="/DisplayCode">
               <DisplayCode product={product} />
@@ -49,27 +49,6 @@ function App() {
               <Resultproduct />
             </Route>
           </Switch>
-=======
-
-        <div className="nav-btn">
-          <button className="buttonmenu">
-            <Link to="/">Home</Link>
-          </button>
-          <button className="buttonmenu">
-            <Link to="/ProductScan">Je scanne</Link>
-          </button>
-
-        </div>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/ProductScan">
-            <ProductScan product={product} setProduct={setProduct}/>
-          </Route>
-        </Switch>
-
->>>>>>> e33f8e3cfb34f99621ad8d22c2f13890073002ff
       </Router>
       <Footer />
     </div>
