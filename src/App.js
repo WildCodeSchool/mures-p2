@@ -32,6 +32,7 @@ function App() {
     <div className="App">
       <Header />
       <Router>
+
           <Switch>
             <Route exact path="/">
               <Home />
@@ -39,8 +40,8 @@ function App() {
             <Route path="/ProductScan">
               <ProductScan product={product} setProduct={setProduct}/>
             </Route>
-            <Route path="/DisplayCode">
-              <DisplayCode product={product} />
+            <Route path="/ProductScan">
+              <ProductScan product={product} />
             </Route>
             <Route path="/Contact">
               <Contact />
@@ -50,6 +51,7 @@ function App() {
             </Route>
             <Route path="/product/:id" component={DisplayCode} />
           </Switch>
+
       </Router>
       <Footer />
     </div>

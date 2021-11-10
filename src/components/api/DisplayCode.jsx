@@ -8,12 +8,14 @@ import ProductsProxi from './ProductsProxi';
 import "./DisplayCode.css"
 import axios from 'axios';
 
+
 function Product({ match, product, setProduct }) {
   const [product, setProduct] = useState();
   const [isNotFound, setIsNotFound] = useState(false);
   const reloader = () => {
     window.location.reload()
    }
+
 
   const { id } = match.params
 
