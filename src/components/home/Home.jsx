@@ -23,6 +23,9 @@ return (
             <div className="wrapbutton3">
                 <Link to="/Contact"><button className="buttonmenu">Contact</button></Link>
             </div>
+            <div className="wrapbutton4">
+                <Link to="/Resultproduct"><button className="buttonmenu">resultat</button></Link>
+            </div>
             </div>
         </section>
     </main>

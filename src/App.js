@@ -7,7 +7,9 @@ import Header from "./components/header/Header";
 import axios from "axios";
 import ProductScan from "./components/ProductScan/ProductScan";
 import Home from "./components/home/Home";
-import Contact from "./components/contact/Contact"
+import Contact from "./components/contact/Contact";
+import Resultproduct from "./components/api/Resultproduct";
+import DisplayCode from "./components/api/DisplayCode";
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
@@ -30,18 +32,24 @@ function App() {
     <div className="App">
       <Header />
       <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/DisplayScan">
-            <DisplayScan />
-          </Route>
-          <Route path="/ProductScan">
-            <ProductScan product={product} setProduct={setProduct}/>
-          </Route>
-          <Route path="/product/:id" component={DisplayCode} />
-        </Switch>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/ProductScan">
+              <ProductScan product={product} setProduct={setProduct}/>
+            </Route>
+            <Route path="/DisplayCode">
+              <DisplayCode product={product} />
+            </Route>
+            <Route path="/Contact">
+              <Contact />
+            </Route>
+            <Route path="/Resultproduct">
+              <Resultproduct />
+            </Route>
+            <Route path="/product/:id" component={DisplayCode} />
+          </Switch>
       </Router>
       <Footer />
     </div>

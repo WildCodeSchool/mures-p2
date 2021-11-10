@@ -43,21 +43,11 @@ function Product({ match, product, setProduct }) {
               <main>
                 <button className="buttonmenu" onClick={reloader}>Je scanne un autre produit</button>
                 <section className='DisplayCode'> 
-                  <div>
                     <ProductsInfos product={product} />
-                  </div>
-                  <div>
                     <ProductsIngredient product={product} />
-                  </div>
-                  <div>
                     <ProductsNutri product={product} />
-                  </div>
-                  <div>
                     <ProductsProxi product={product} />
-                  </div>
-                  <div>
                     <Alternatives product={product} />
-                  </div>
                   <ProductsPack product={product} />
                 </section>
               </main>

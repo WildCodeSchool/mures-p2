@@ -38,21 +38,15 @@ function Header() {
         <ul className="navbar_links">
           <li className="navbar_item slideInDown-1">
             <a href="/" className="navbar_link">
-              {/* remplacer link to a la place de href*/}
               Home
             </a>
           </li>
           <li className="navbar_item slideInDown-2">
-            <a href="/" className="navbar_link">
-              Mes préférences
+            <a href="/DisplayScan" className="navbar_link">
+              Je scanne
             </a>
           </li>
           <li className="navbar_item slideInDown-3">
-            <a href="/" className="navbar_link">
-              Mon garde manger
-            </a>
-          </li>
-          <li className="navbar_item slideInDown-4">
             <a href="/Contact" className="navbar_link">
               Qui sommes nous
             </a>
