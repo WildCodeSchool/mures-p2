@@ -9,10 +9,14 @@ import "./DisplayCode.css"
 
 
 
-function DisplayCode({product}) {
+function DisplayCode({product, setProduct}) {
+  const reloader = () => {
+    window.location.reload()
+   }
   return (
     product && (
       <main>
+      <button className="buttonmenu" onClick={reloader}>Je scanne un autre produit</button>
         <section className='DisplayCode'> 
           <ProductsInfos product={product}/>
           <ProductsIngredient product={product} />
@@ -23,6 +27,7 @@ function DisplayCode({product}) {
         </section>        
       </main>
     )
+
   );
 }
 
