@@ -30,25 +30,18 @@ function App() {
     <div className="App">
       <Header />
       <Router>
-
-        <div className="nav-btn">
-          <button className="buttonmenu">
-            <Link to="/">Home</Link>
-          </button>
-          <button className="buttonmenu">
-            <Link to="/ProductScan">Je scanne</Link>
-          </button>
-
-        </div>
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
+          <Route path="/DisplayScan">
+            <DisplayScan />
+          </Route>
           <Route path="/ProductScan">
             <ProductScan product={product} setProduct={setProduct}/>
           </Route>
+          <Route path="/product/:id" component={DisplayCode} />
         </Switch>
-
       </Router>
       <Footer />
     </div>
