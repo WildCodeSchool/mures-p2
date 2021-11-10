@@ -8,7 +8,8 @@ import axios from "axios";
 import DisplayScan from "./components/Scan/DisplayScan";
 import DisplayCode from "./components/api/DisplayCode";
 import Home from "./components/home/Home";
-import Contact from "./components/contact/Contact"
+import Contact from "./components/contact/Contact";
+import Resultproduct from "./components/api/Resultproduct";
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
@@ -46,6 +47,9 @@ function App() {
             </Route>
             <Route path="/Contact">
               <Contact />
+            </Route>
+            <Route path="/Resultproduct">
+              <Resultproduct />
             </Route>
           </Switch>
       </Router>

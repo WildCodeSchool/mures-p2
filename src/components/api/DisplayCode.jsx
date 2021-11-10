@@ -17,7 +17,7 @@ function DisplayCode({product}) {
           <ProductsInfos product={product}/>
           <ProductsIngredient product={product} />
           <ProductsNutri  product={product}/>
-          <Alternatives/>
+          <Alternatives product={product}/>
           <ProductsPack product={product} />
           <ProductsProxi product={product} />
         </section>        
