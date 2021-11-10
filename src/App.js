@@ -37,7 +37,7 @@ function App() {
               <Home />
             </Route>
             <Route path="/ProductScan">
-              <ProductScan />
+              <ProductScan product={product} setProduct={setProduct}/>
             </Route>
             <Route path="/DisplayCode">
               <DisplayCode product={product} />
@@ -48,6 +48,7 @@ function App() {
             <Route path="/Resultproduct">
               <Resultproduct />
             </Route>
+            <Route path="/product/:id" component={DisplayCode} />
           </Switch>
       </Router>
       <Footer />

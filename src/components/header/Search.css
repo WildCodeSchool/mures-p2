@@ -33,3 +33,15 @@
     background-size: 85% ;
     background-repeat: no-repeat;
 }
+
+.loadingButton{
+    z-index: 1;
+    background-color: #84BF04;
+    height: 50px;
+    width: 50px;
+    border-radius: 0px 30px 30px 0px;
+    border: 2px solid #FFFFFF;
+    background-image: url("../../assets/loading.png") ;
+    background-size: 85% ;
+    background-repeat: no-repeat;
+}
