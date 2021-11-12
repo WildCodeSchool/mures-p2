@@ -29,7 +29,10 @@ function Alternatives({ product }) {
     }
 
     const handleRedirect = () => {
+        console.log("handleRedirect")
+        console.log("alternativeProduct", alternativeProduct)
         history.push(`/product/${ alternativeProduct.id }`)
+        
     }
 
 

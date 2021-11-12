@@ -15,9 +15,7 @@ function Header() {
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
   };
-  const onSubmit = (products) => {
-    console.log(products);
-}
+
 
   const onSubmit = (product) => {
     if (product) {
