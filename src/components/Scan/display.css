@@ -21,7 +21,7 @@
     top: 10rem;
 }
 
-.buttonscan{
+.buttonScan{
     width: 10rem;
     font-size: 2rem;
     color: white;
@@ -31,10 +31,9 @@
 
 }
 
-.buttonscan:hover{
+.buttonScan:hover{
     background-color: #84BF04;
     cursor: pointer;
-
 }
 
 

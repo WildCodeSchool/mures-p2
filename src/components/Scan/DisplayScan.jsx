@@ -15,13 +15,16 @@ const DisplayScan = ({setProduct, product}) => {
 
    const getOpenFoodFact = async () => {
     // Send the request
-   await axios
+   
+   try{ await axios
       .get(`https://fr.openfoodfacts.org/api/v2/product/${barcode}`)
       .then((response) => response.data)
       .then((data) => {
         setProduct(data.product);
       });
-      console.log(barcode);
+    } catch {
+      alert('Produit non trouvé, rééssayez de scanner')
+    }
   };
 
 

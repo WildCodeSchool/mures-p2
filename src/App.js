@@ -39,8 +39,8 @@ function App() {
             <Route path="/ProductScan">
               <ProductScan product={product} setProduct={setProduct}/>
             </Route>
-            <Route path="/DisplayCode">
-              <DisplayCode product={product} />
+            <Route path="/ProductScan">
+              <ProductScan product={product} />
             </Route>
             <Route path="/Contact">
               <Contact />
