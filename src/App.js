@@ -8,7 +8,7 @@ import axios from "axios";
 import ProductScan from "./components/ProductScan/ProductScan";
 import Home from "./components/home/Home";
 import Contact from "./components/contact/Contact";
-import Resultproduct from "./components/api/Resultproduct";
+import Resultproduct from "./components/api/ResultProduct";
 import DisplayCode from "./components/api/DisplayCode";
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
@@ -30,8 +30,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
       <Router>
+        <Header />
           <Switch>
             <Route exact path="/">
               <Home />
@@ -46,12 +46,12 @@ function App() {
               <Contact />
             </Route>
             <Route path="/Resultproduct">
-              <Resultproduct />
+              <Resultproduct product={product}/>
             </Route>
             <Route path="/product/:id" component={DisplayCode} />
           </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }

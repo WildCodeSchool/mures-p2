@@ -15,9 +15,6 @@ function Header() {
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
   };
-  const onSubmit = (products) => {
-    console.log(products);
-}
 
   const onSubmit = (product) => {
     if (product) {
@@ -25,11 +22,11 @@ function Header() {
     } else {
       alert('Aucun produit trouvé')
     }
-  }
+  };
 
 
   return (
-    <head className="header">
+    <header className="header">
       <Search onSubmit={onSubmit} />
       <div className="logoheader">
         <img className="imgheader" src={Cheesecake}></img>
@@ -42,13 +39,13 @@ function Header() {
             </a>
           </li>
           <li className="navbar_item slideInDown-2">
-            <a href="/DisplayScan" className="navbar_link">
+            <a href="/ProductScan" className="navbar_link">
               Je scanne
             </a>
           </li>
           <li className="navbar_item slideInDown-3">
             <a href="/Contact" className="navbar_link">
-              Qui sommes nous
+              Qui sommes nous & contacter nous
             </a>
           </li>
         </ul>
@@ -56,7 +53,7 @@ function Header() {
           <span className="burger-bar"></span>
         </button>
       </nav>
-    </head>
+    </header>
   );
 }
 export default withRouter(Header);

@@ -2,14 +2,13 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import "./Search.css";
 import axios from 'axios';
+import Resultproduct from '../api/ResultProduct';
 
 
 function Search(props) {
 
     const [isLoading, setIsLoading] = useState(false);
-    const [products, setProducts] = useState('');
     const [searchTerm, setSearchTerm] = useState('');
-    const [searchTermF, setSearchTermF] = useState('');
 
     const handleSearchTerm = (e) => {
         setSearchTerm(e.target.value)

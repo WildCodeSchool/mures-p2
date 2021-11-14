@@ -25,8 +25,11 @@
     grid-row: 2;
 }
 
-.buttonmenu{
-    width: 10rem;
+.scan-again-btn{
+   position: absolute;
+   top: 30rem;
+    margin: 0 auto;
+    width: 15rem;
     height: 3rem;
     color: white;
     background-color: #467302;
@@ -34,9 +37,8 @@
     font-weight: 500;
   }
   
-  .buttonmenu:hover{
+  .scan-again-btn:hover{
     background-color: #84BF04;
     cursor: pointer;
-  
   }
 

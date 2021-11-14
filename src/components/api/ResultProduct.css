@@ -1,0 +1,51 @@
+.productName h1{
+    position: relative;
+    margin-top: 30%;
+    color: black;
+}
+
+.carousel-root{
+    position: relative;
+    margin-top: 40%;
+}
+.carousel{
+    position: relative;
+}
+.carousel .thumbs{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.carousel .thumb{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel .overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0.4rem 1.5rem;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+}
+.carousel .overlay__title{
+    margin: 0.8rem 0 1rem 0; 
+}
+
+@media screen and (min-width: 767px)  {
+    .productName h1{
+        position: relative;
+        margin-top: 15%;
+        color: black;
+    }
+    .carousel-root{
+        position: relative;
+        margin-top: 0%;
+    }
+}
+
