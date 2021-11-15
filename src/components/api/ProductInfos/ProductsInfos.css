@@ -1,17 +1,49 @@
-.InfoPrincipales{
+
+
+.card {
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr .5fr ;
-    grid-column: 1;
-    grid-row: 1;
+    cursor: pointer;
     width: 340px;
     height: 250px;
     border-radius: 10px;
     background-color:#FFDCBD ;
     background-size: cover;
     box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
-}
+    transform-style: preserve-3d;
+    transition: 300ms;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+    translateY(var(--translate-y, 0));
+
+  }
+  
+  
+  .card.flip {
+    --rotate-y: 180deg;
+  }
+  
+  .card .front,
+  .card .back {
+    position: absolute;
+    padding: 1rem;
+    backface-visibility: hidden;
+  }
+  
+  .card .front{
+    transform: rotateY(0deg);
+    left: 0;
+  }
+  
+  
+  .card .back{
+    transform: rotateY(180deg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr .5fr ;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+
 .imgproducts{
     grid-column: 1;
     grid-row: 2;
@@ -47,6 +79,7 @@
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg");
     background-size: 100%;
     cursor: pointer;
+    z-index: 2;
   }
   
   .notFavorite {
@@ -57,3 +90,7 @@
     background-size: 100%;
     cursor: pointer;
   }
+
+h1{
+    font-size: 2rem;
+}

@@ -27,7 +27,7 @@ function App() {
   };
 
 
-
+  
   return (
     <div className="App">
       <Router>
@@ -39,13 +39,10 @@ function App() {
             <Route path="/ProductScan">
               <ProductScan product={product} setProduct={setProduct}/>
             </Route>
-            <Route path="/ProductScan">
-              <ProductScan product={product} />
-            </Route>
             <Route path="/Contact">
               <Contact />
             </Route>
-            <Route path="/Resultproduct">
+            <Route path="/Resultproduct/:searchTerm">
               <Resultproduct />
             </Route>
             <Route path="/product/:id" component={DisplayCode} />
