@@ -19,7 +19,7 @@ function Header(searchTerm) {
 
   const onSubmit = (searchTerm) => {
     if (searchTerm) {
-      history.push(`/ResultProduct/${searchTerm}`)
+      history.push(`/Resultproduct/${searchTerm}`)
     } else {
       alert('Aucun produit trouvé')
     }

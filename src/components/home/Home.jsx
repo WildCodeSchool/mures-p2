@@ -17,6 +17,15 @@ return (
             <div className="wrapbutton">   
                 <Link to="/ProductScan"><button className="buttonScan">Je scanne</button></Link>
             </div>
+            <div className="wrapbutton2">
+                <Link to="/DisplayCode"><button className="buttonmenu">Fiche Produit</button></Link>
+            </div>
+            <div className="wrapbutton3">
+                <Link to="/Contact"><button className="buttonmenu">Contact</button></Link>
+            </div>
+            <div className="wrapbutton4">
+                <Link to="/Resultproduct"><button className="buttonmenu">resultat</button></Link>
+            </div>
             </div>
         </section>
     </main>

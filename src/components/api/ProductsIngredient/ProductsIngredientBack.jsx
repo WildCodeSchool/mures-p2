@@ -1,11 +1,11 @@
 import React from 'react'
 import "./ProductsIngredient.css";
 
-function ProductsIngredient({product}) {
+function ProductsIngredientBack({product}) {
     return (
         <article className='alimentation'>
             <table>
-                <caption>Caractéristique produit</caption>
+                <caption>Caractéristiques produit</caption>
                 <tr>
                     <th className="caract">Ingredients & Traces éventuelles :</th>
                     <td className="td1-3">{product.ingredients_text_fr}</td>
@@ -23,4 +23,4 @@ function ProductsIngredient({product}) {
     )
 }
 
-export default ProductsIngredient
+export default ProductsIngredientBack;
