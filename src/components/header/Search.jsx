@@ -37,11 +37,6 @@ function Search(props) {
                 <button className={!isLoading ? "searchButton" : 'loadingButton'} > </button>
             </form>
         </div>
-
-       
-          
-          
-
     )
 }
 

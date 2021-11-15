@@ -43,8 +43,8 @@ function App() {
             <Route path="/Contact">
               <Contact />
             </Route>
-            <Route path="/ResultProduct">
-              <Slider product={product} setProduct={setProduct}/>
+            <Route path="/Resultproduct/:searchTerm">
+              <Resultproduct />
             </Route>
               <Route path="/product/:id" component={Slider} />
           </Switch>

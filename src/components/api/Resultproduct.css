@@ -1,12 +1,14 @@
 .productName h1{
-    position: relative;
-    margin-top: 30%;
+    position: fixed;
+    margin-top: 100px;
     color: black;
 }
 
 .carousel-root{
-    position: relative;
-    margin-top: 40%;
+   position: fixed;
+   margin-top: 150px;
+   margin-bottom: 100px;
+   width: 100%;
 }
 .carousel{
     position: relative;
@@ -14,17 +16,21 @@
 .slider{
     cursor: pointer;
 }
+.slider-wrapper .imgslide{
+    width: 250px;
+    height: 350px;
+}
 .carousel .thumbs{
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 10px;
 }
 
 .carousel .thumb{
     margin: 0 5px;
     cursor: pointer;
 }
+
 
 .carousel .overlay{
     position: absolute;
@@ -49,6 +55,10 @@
     .carousel-root{
         position: relative;
         margin-top: 0%;
+    }
+    .slider-wrapper .imgslide{
+        width: 250px;
+        height: 350px;
     }
 }
 
