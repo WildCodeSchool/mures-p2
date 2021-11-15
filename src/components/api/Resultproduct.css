@@ -1,40 +1,54 @@
-.resultproduct{
-    margin-top: 200px;
+.productName h1{
+    position: relative;
+    margin-top: 30%;
+    color: black;
 }
-.slideimg{
-    display: grid;
-    grid-template-areas: ". a ." 
-                         "b a c"       
-                         ". a ."
-                         ". d .";
-    height: 360px;
-    width: 100px;
 
+.carousel-root{
+    position: relative;
+    margin-top: 40%;
 }
-.imgproduct1{
-    grid-area: a;
-    width: 250px;
-    height: 300px;
+.carousel{
+    position: relative;
 }
-.imgproduct2{
-    grid-area: b;
-    width: 50px;
-    height: 300px;
+.slider{
+    cursor: pointer;
 }
-.imgproduct3{    
-    grid-area: c;
-    width: 50px;
-    height: 300px;
+.carousel .thumbs{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
 }
-.slideshowDots {  
-    text-align: center;
+
+.carousel .thumb{
+    margin: 0 5px;
+    cursor: pointer;
 }
-.slideshowDot {  
-    display: inline-block;  
-    height: 20px;  
-    width: 20px;  
-    border-radius: 50%;  
-    cursor: pointer;  
-    margin: 15px 7px 0px;  
-    background-color: #c4c4c4;
+
+.carousel .overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0.4rem 1.5rem;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFF;
 }
+.carousel .overlay__title{
+    margin: 0.8rem 0 1rem 0; 
+}
+
+@media screen and (min-width: 767px)  {
+    .productName h1{
+        position: relative;
+        margin-top: 15%;
+        color: black;
+    }
+    .carousel-root{
+        position: relative;
+        margin-top: 0%;
+    }
+}
+

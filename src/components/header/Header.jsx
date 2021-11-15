@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom';
 
 
 
-function Header() {
+function Header(searchTerm) {
   const history = useHistory();
 
   const [showLinks, setShowLinks] = useState(false);
@@ -17,9 +17,9 @@ function Header() {
   };
 
 
-  const onSubmit = (product) => {
-    if (product) {
-      history.push(`/product/${ product.id }`)
+  const onSubmit = (searchTerm) => {
+    if (searchTerm) {
+      history.push(`/Resultproduct/${searchTerm}`)
     } else {
       alert('Aucun produit trouvé')
     }
