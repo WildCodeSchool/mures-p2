@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom';
 
 
 
-function Header() {
+function Header(searchTerm) {
   const history = useHistory();
 
   const [showLinks, setShowLinks] = useState(false);
@@ -16,17 +16,18 @@ function Header() {
     setShowLinks(!showLinks);
   };
 
-  const onSubmit = (product) => {
-    if (product) {
-      history.push(`/product/${ product.id }`)
+
+  const onSubmit = (searchTerm) => {
+    if (searchTerm) {
+      history.push(`/ResultProduct/${searchTerm}`)
     } else {
       alert('Aucun produit trouvé')
     }
-  };
+  }
 
 
   return (
-    <header className="header">
+    <head className="header">
       <Search onSubmit={onSubmit} />
       <div className="logoheader">
         <img className="imgheader" src={Cheesecake}></img>
@@ -39,13 +40,13 @@ function Header() {
             </a>
           </li>
           <li className="navbar_item slideInDown-2">
-            <a href="/ProductScan" className="navbar_link">
+            <a href="/DisplayScan" className="navbar_link">
               Je scanne
             </a>
           </li>
           <li className="navbar_item slideInDown-3">
             <a href="/Contact" className="navbar_link">
-              Qui sommes nous & contacter nous
+              Qui sommes nous
             </a>
           </li>
         </ul>
@@ -53,7 +54,7 @@ function Header() {
           <span className="burger-bar"></span>
         </button>
       </nav>
-    </header>
+    </head>
   );
 }
 export default withRouter(Header);

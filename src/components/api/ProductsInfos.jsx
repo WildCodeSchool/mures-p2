@@ -14,7 +14,7 @@ function ProductsInfos( {product}) {
         <article className='InfoPrincipales'>
                <img className="imgproducts" src={product.image_url}></img>
             <div className="nameProduct">
-                <h1>{product.product_name} </h1>
+                <h1>{product.product_name_fr} </h1>
             </div>
             <div className="detailProducts">
                 <p><u>Code barre </u>:  {product.code}</p>

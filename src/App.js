@@ -10,6 +10,7 @@ import Home from "./components/home/Home";
 import Contact from "./components/contact/Contact";
 import Resultproduct from "./components/api/ResultProduct";
 import DisplayCode from "./components/api/DisplayCode";
+import Slider from "./components/api/ResultProduct";
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
@@ -45,10 +46,10 @@ function App() {
             <Route path="/Contact">
               <Contact />
             </Route>
-            <Route path="/Resultproduct">
-              <Resultproduct product={product}/>
+            <Route path="/ResultProduct">
+              <Slider product={product} setProduct={setProduct}/>
             </Route>
-            <Route path="/product/:id" component={DisplayCode} />
+              <Route path="/product/:id" component={Slider} />
           </Switch>
         <Footer />
       </Router>

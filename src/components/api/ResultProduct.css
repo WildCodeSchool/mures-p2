@@ -1,3 +1,4 @@
+
 .productName h1{
     position: relative;
     margin-top: 30%;
@@ -10,6 +11,9 @@
 }
 .carousel{
     position: relative;
+}
+.slider{
+    cursor: pointer;
 }
 .carousel .thumbs{
     display: flex;
