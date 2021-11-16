@@ -22,7 +22,7 @@ function Alternatives({ product }) {
                 setalternativeProduct(alternativeProduct)
             }
         } catch {
-            console.log('Une erreur est arrivé')
+            console.log('Une erreur est arrivée')
         } finally {
             setIsLoading(false)
         }
@@ -31,7 +31,7 @@ function Alternatives({ product }) {
     const handleRedirect = () => {
         console.log("handleRedirect")
         console.log("alternativeProduct", alternativeProduct)
-        history.push(`/product/${ alternativeProduct.id }`)
+        history.push(`/ProductId/${ alternativeProduct.id }`)
         
     }
 

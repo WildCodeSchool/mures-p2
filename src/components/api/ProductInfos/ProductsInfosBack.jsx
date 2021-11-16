@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import "./ProductsInfos.css";
 
 
-function ProductsInfos( {product}) {
+function ProductsInfosBack( {product}) {
 
     const [isFav, setIsFav] = React.useState(false);
 
@@ -11,10 +11,11 @@ function ProductsInfos( {product}) {
     }
 
     return (
-        <article className='InfoPrincipales'>
+        <div className = "back">
+ 
                <img className="imgproducts" src={product.image_url}></img>
             <div className="nameProduct">
-                <h1>{product.product_name} </h1>
+                <h1>{product.product_name_fr} </h1>
             </div>
             <div className="detailProducts">
                 <p><u>Code barre </u>:  {product.code}</p>
@@ -28,8 +29,11 @@ function ProductsInfos( {product}) {
                 >
                 </div> 
             </div>    
-        </article>
+    
+        
+        
+        </div>
     );
 }
 
-export default ProductsInfos;
+export default ProductsInfosBack;

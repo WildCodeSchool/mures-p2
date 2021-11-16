@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from "react";
 import "./Search.css";
 import axios from 'axios';
+import Home from '../home/Home'
 
 
 function Search(props) {
@@ -16,19 +17,13 @@ function Search(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        props.onSubmit(await getOpenFoodFact())
+        props.onSubmit(searchTerm)
     }
 
-    const getOpenFoodFact = async () => {
-        // Send the request 
-        setIsLoading(true)
-        const url = `https://fr.openfoodfacts.org/cgi/search.pl?action=process&search_terms=${ searchTerm }&json=true`
-        const response = await axios(url);
-        setIsLoading(false)
-        return response.data.products?.[0]
-    }
+ 
 
     return (
+     
         <div>
             <form className="searchBar" action="" onSubmit={handleSubmit} >
                 <input

@@ -12,7 +12,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   width: 100%;
-  min-height: 800px;
+  min-height: 740px;
 }
 .logomain{
   display: flex;
@@ -24,7 +24,7 @@
   height: 150px;
 }
 
-.buttonScan{
+.buttonscan{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,30 +45,11 @@
   align-items: flex-start;
 }
 
-.buttonmenu{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #84BF04;
-  width: 180px;
-  height: 50px;
-  font-size: 1.2rem;
-  border: 2px solid #FFFFFF;
-  border-radius:  30px;
-  color: black;
-  font-weight: 500;
-}
-.wrapbutton2{
-  display: flex;
-  grid-column: 1;
-  grid-row: 2;
-  justify-content: center;
-  padding: 100px;
-}
 
 @media screen and (min-width: 767px){
   .body{
-    min-height: 1000px;
+    margin-top: 80px;
+    min-height: 740px;
   }
 }
 
