@@ -11,6 +11,8 @@ import Contact from "./components/contact/Contact";
 import Resultproduct from "./components/api/ResultProduct";
 import DisplayCode from "./components/api/DisplayCode";
 import Slider from "./components/api/ResultProduct";
+import ProductId from "./components/api/ProductId/ProductId";
+
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
@@ -46,7 +48,9 @@ function App() {
             <Route path="/Resultproduct/:searchTerm">
               <Resultproduct />
             </Route>
-              <Route path="/product/:id" component={DisplayCode} />
+            <Route path="/ProductId/:id">
+            <ProductId product={product} setProduct={setProduct}/>
+            </Route>
           </Switch>
         <Footer />
       </Router>
