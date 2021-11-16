@@ -4,11 +4,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import axios from 'axios';
 import {useParams} from "react-router-dom";
+import { withRouter } from 'react-router-dom';
 
 
 function Slider() {
 
     const [ searchResults, setSearchResults ] = useState([]);
+
 
     const { searchTerm } = useParams();
 
@@ -27,44 +29,32 @@ function Slider() {
 
     const [goProducts, setGoProducts] = useState('');
 
-    const handleClick = (e) => {
-        setGoProducts(e.target.value)
-    };
+/*
+   const handleClick = (this.slide._id) => {
+    setGoProducts(goProducts)
+    console.log(goProducts)
+    }
+       if (goProducts) {
+            history.push(`/Resultproduct/id/${goProducts}`)
+          } else {
+            alert('Aucun produit trouvé')
+          }
+    };*/
 
-
-    const baseUrl = "http://react-responsive-carousel.js.org/assets/";
-    const datas = [
-        {
-          id:1,
-            image: `${baseUrl}1.jpeg`,
-            title: "titre 1",
-        },
-        {
-            id:2,
-            image: `${baseUrl}2.jpeg`,
-            title: "titre 2",
-        },
-        {
-            id:3,
-            image: `${baseUrl}3.jpeg`,
-            title: "titre 3",
-        },
-    ]
 
     return (
-            <main>
-                <div className="productName">
-                    <h1>Le nom du produit</h1>
-                </div>
+            <main className="slider">
             <Carousel 
               autoPlay
               interval={6000} 
               infiniteLoop
+              centerMode
               >
                 {searchResults.map(slide => (
                     <div key={slide._id}>
-                        <img className="imgslide" onClick={handleClick} src={slide.image_url} alt=""/>
+                        <img className="imgslide"   src={slide.image_url} />
                         <div className="overlay">
+                          <a href={`/ProductId/${slide._id}`}> <button>Go to Product</button> </a> 
                             <h2 className="overlay__title">{slide.product_name}</h2>
                         </div>
                     </div>
@@ -74,5 +64,5 @@ function Slider() {
     )
 }
 
-export default Slider
 
+export default withRouter(Slider);

@@ -10,6 +10,7 @@ import Home from "./components/home/Home";
 import Contact from "./components/contact/Contact";
 import Resultproduct from "./components/api/Resultproduct";
 import DisplayCode from "./components/api/DisplayCode";
+import ProductId from "./components/api/ProductId/ProductId";
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
@@ -45,7 +46,9 @@ function App() {
             <Route path="/Resultproduct/:searchTerm">
               <Resultproduct />
             </Route>
-            <Route path="/product/:id" component={DisplayCode} />
+            <Route path="/ProductId/:id">
+            <ProductId product={product} setProduct={setProduct}/>
+            </Route>
           </Switch>
       </Router>
       <Footer />
