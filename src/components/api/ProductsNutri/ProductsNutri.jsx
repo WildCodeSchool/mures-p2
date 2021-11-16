@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./ProductsNutri.css";
 import ProductsNutriBack from './ProductsNutriBack';
 import ProductsNutriFront from './ProductsNutriFront';
