@@ -3,6 +3,7 @@
     margin-top: 100px;
     margin-left: 75px;
     color: #467302;
+    width: 100%;
 }
 .carousel-root{
    position: fixed;
@@ -15,7 +16,6 @@
     position: relative;
 }
 .slider{
-    cursor: pointer;
     width: 250px;
     height: 350px;
 }
@@ -49,10 +49,19 @@
     border: 2px solid #FFFFFF;
     color: #467302;
 }
+
+
 .carousel .overlay__title{
     display: flex;
     text-align: center;
     align-items: center; 
+}
+
+.carousel .overlay__button{
+    color: #467302;
+    background-color: transparent ;
+    cursor: pointer;
+
 }
 
 @media screen and (min-width: 767px)  {
@@ -70,7 +79,6 @@
         width: 100%;
     }
     .slider{
-        cursor: pointer;
         width: 200px;
         height: 500px;
     }

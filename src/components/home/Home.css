@@ -48,7 +48,8 @@
 
 @media screen and (min-width: 767px){
   .body{
-    min-height: 1000px;
+    margin-top: 80px;
+    min-height: 740px;
   }
 }
 

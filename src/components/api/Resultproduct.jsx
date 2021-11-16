@@ -39,13 +39,14 @@ function Resultproduct() {
                     <div key={slide._id}>
                         <img className="imgslide"   src={slide.image_url} />
                         <div className="overlay">
-                          <a href={`/ProductId/${slide._id}`}> <button>Go to Product</button> </a> 
+                          <a href={`/ProductId/${slide._id}`}> <button className="overlay__button">Go to Product</button> </a> 
                             <h2 className="overlay__title">{slide.product_name}</h2>
                         </div>
                     </div>
                 ))}
             </Carousel>
             </main>
+
     )
 }
 

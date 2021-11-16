@@ -2,23 +2,30 @@
     font-size: 14px;
 }
 
+.displayScan{
+
+    width: 360px;
+    height: 740px;
+    margin-bottom: 80px;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
-    top: 18rem;
+    top: 10rem;
 }
 
 .window {
     position: relative;
     border: 10px solid #467302;
+
 }
 
 .drawingBuffer{
     position: absolute;
-    top: 10rem;
 }
 
 .buttonScan{
