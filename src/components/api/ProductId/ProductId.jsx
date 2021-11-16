@@ -16,6 +16,7 @@ const ProductId = ({setProduct, product}) => {
           .then((response) => response.data)
           .then((data) => {
             setProduct(data.product);
+            console.log(data.product);
           });
         } catch {
           alert('Produit non trouvé, faites une nouvelle recherche')

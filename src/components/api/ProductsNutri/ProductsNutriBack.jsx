@@ -8,15 +8,15 @@ export default function ProductsNutri({product}) {
                 <caption>Informations nutritionnelles</caption>
                 <tr>
                     <th className="caract">Matières grasses: </th>
-                    <td className="td1-3">{product.nutrient_levels.fat}</td>
+                    <td className="td1-3">{product.nutriments.fat_100g} gr</td>
                 </tr>
                 <tr>
                     <th className="caract">Sel: </th>
-                    <td className="td2-4">{product.nutrient_levels.salt}</td>
+                    <td className="td2-4">{product.nutriments.salt_100g} gr</td>
                 </tr>
                 <tr>
                     <th className="caract">Sucre: </th>
-                    <td className="td1-3">{product.nutrient_levels.sugars}</td>
+                    <td className="td1-3">{product.nutriments.sugars_100g} gr</td>
                 </tr>
                 <tr>
                     <th className="caract">Taille d'une portion : </th>

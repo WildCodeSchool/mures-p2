@@ -18,12 +18,10 @@ table{
 
 td, th{
     border: 1px solid black;
-    height: 30px;
-    
+    height: 30px; 
 }
 
 .nutrition caption{
-    margin-top: 10px;
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: bold;
