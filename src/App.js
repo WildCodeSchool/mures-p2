@@ -7,7 +7,7 @@ import Header from "./components/header/Header";
 import axios from "axios";
 import ProductScan from "./components/ProductScan/ProductScan";
 import Home from "./components/home/Home";
-import Contact from "./components/contact/Contact";
+import Contacts from "./components/contact/Contacts";
 import Resultproduct from "./components/api/Resultproduct";
 import DisplayCode from "./components/api/DisplayCode";
 
@@ -39,8 +39,8 @@ function App() {
             <Route path="/ProductScan">
               <ProductScan product={product} setProduct={setProduct}/>
             </Route>
-            <Route path="/Contact">
-              <Contact />
+            <Route path="/contact">
+              <Contacts />
             </Route>
             <Route path="/Resultproduct/:searchTerm">
               <Resultproduct />
