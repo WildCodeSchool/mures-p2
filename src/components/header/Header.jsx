@@ -40,7 +40,7 @@ function Header(searchTerm) {
             </a>
           </li>
           <li className="navbar_item slideInDown-2">
-            <a href="/DisplayScan" className="navbar_link">
+            <a href="/ProductScan" className="navbar_link">
               Je scanne
             </a>
           </li>
