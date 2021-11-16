@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 
 import DisplayCode from "../api/DisplayCode";
 import DisplayScan from "../Scan/DisplayScan";
+import "../Scan/display.css"
 
 const ProductScan = ({setProduct, product}) => {
  const reloader = () => {
@@ -9,7 +10,7 @@ const ProductScan = ({setProduct, product}) => {
  }
 
   return (
-    <div className="productScan">
+    <main className="productScan">
       
       {product === ""
       ? <DisplayScan product={product}  setProduct={setProduct}/>
@@ -18,7 +19,7 @@ const ProductScan = ({setProduct, product}) => {
       <DisplayCode product={product}  setProduct={setProduct}/>
       }
       
-    </div>
+    </main>
   );
 };
 
