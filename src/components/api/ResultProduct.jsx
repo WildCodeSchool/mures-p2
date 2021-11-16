@@ -34,7 +34,7 @@ function Slider() {
     return (
             <main className="slider">
                 <div className="productName">
-                    <h1>Le nom du produit</h1>
+                <h1>{searchTerm}</h1>
                 </div>
             <Carousel 
               autoPlay

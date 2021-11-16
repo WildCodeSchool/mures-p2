@@ -2,9 +2,7 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import "./Search.css";
 import axios from 'axios';
-import Slider from '../api/Resultproduct'
 import Home from '../home/Home'
-import Resultproduct from '../api/Resultproduct';
 
 
 function Search(props) {

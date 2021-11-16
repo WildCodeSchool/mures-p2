@@ -46,7 +46,7 @@ function App() {
             <Route path="/Resultproduct/:searchTerm">
               <Resultproduct />
             </Route>
-              <Route path="/product/:id" component={Slider} />
+              <Route path="/product/:id" component={DisplayCode} />
           </Switch>
         <Footer />
       </Router>

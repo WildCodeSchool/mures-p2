@@ -12,7 +12,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   width: 100%;
-  min-height: 800px;
+  min-height: 740px;
 }
 .logomain{
   display: flex;

@@ -31,30 +31,10 @@ function Slider() {
         setGoProducts(e.target.value)
     };
 
-
-    const baseUrl = "http://react-responsive-carousel.js.org/assets/";
-    const datas = [
-        {
-          id:1,
-            image: `${baseUrl}1.jpeg`,
-            title: "titre 1",
-        },
-        {
-            id:2,
-            image: `${baseUrl}2.jpeg`,
-            title: "titre 2",
-        },
-        {
-            id:3,
-            image: `${baseUrl}3.jpeg`,
-            title: "titre 3",
-        },
-    ]
-
     return (
             <main>
                 <div className="productName">
-                    <h1>Le nom du produit</h1>
+                    <h1>Produit rechercher:{searchTerm}</h1>
                 </div>
             <Carousel 
               autoPlay

@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import Alternatives from "./Alternatives";
 import ProductsInfos from './ProductInfos/ProductsInfos';
 import ProductsIngredient from './/ProductsIngredient/ProductsIngredient';
-import ProductsNutri from './ProductsNutri';
+import ProductsNutri from './ProductsNutri/ProductsNutri';
 import ProductsPack from "./ProductsPack"
 import ProductsProxi from './ProductsProxi';
 import "./DisplayCode.css"
 
 
 function DisplayCode({ product }) {
+
  
   const [ isFlip, setIsFlip ] = useState(false);
   const reloader = () => {
@@ -18,6 +19,7 @@ function DisplayCode({ product }) {
   const handleFlip = () => {
     setIsFlip(!isFlip)
   }
+ 
 
   return (
 
@@ -30,10 +32,10 @@ function DisplayCode({ product }) {
                 <section className='DisplayCode'> 
                     <ProductsInfos product={product} handleFlip={handleFlip} isFlip={isFlip} />
                     <ProductsIngredient product={product} />
-                    <ProductsNutri product={product} />
+                    <ProductsNutri product={product} handleFlip={handleFlip} isFlip={isFlip}/>
                     <ProductsProxi product={product} />
                     <Alternatives product={product} />
-                  <ProductsPack product={product} />
+                    <ProductsPack product={product} />
                 </section>
               </main>
             
