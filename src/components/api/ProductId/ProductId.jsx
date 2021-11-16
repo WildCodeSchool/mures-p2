@@ -33,9 +33,6 @@ const ProductId = ({setProduct, product}) => {
             <DisplayCode product={product} /> :
             <h1>Faites une recherche!</h1>
         }
-      
-   
-      
     </div>
   );
 };
