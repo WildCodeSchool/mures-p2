@@ -38,7 +38,8 @@ function Resultproduct() {
               infiniteLoop
               centerMode
               >
-                {searchResults.map(slide => (
+                {
+                searchResults.filter((product) => (product._id.length === 13) && product.countries.includes('France')).slice(0, 10).map(slide => (
                     <div key={slide._id}>
                         <img className="imgslide"   src={slide.image_url} />
                         <div className="overlay">
