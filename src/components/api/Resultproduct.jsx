@@ -7,7 +7,7 @@ import {useParams} from "react-router-dom";
 import { withRouter } from 'react-router-dom';
 
 
-function Slider() {
+function Resultproduct() {
 
     const [ searchResults, setSearchResults ] = useState([]);
 
@@ -18,8 +18,6 @@ function Slider() {
         // Send the request 
         const url = `https://fr.openfoodfacts.org/cgi/search.pl?action=process&search_terms=${ searchTerm }&json=true`
         const response = await axios(url);
-
-       console.log(response.data.products);
        setSearchResults(response.data.products);
     }
 
@@ -27,19 +25,6 @@ function Slider() {
         getOpenFoodFact()
     }, [searchTerm])
 
-    const [goProducts, setGoProducts] = useState('');
-
-/*
-   const handleClick = (this.slide._id) => {
-    setGoProducts(goProducts)
-    console.log(goProducts)
-    }
-       if (goProducts) {
-            history.push(`/Resultproduct/id/${goProducts}`)
-          } else {
-            alert('Aucun produit trouvé')
-          }
-    };*/
 
 
     return (
@@ -65,4 +50,4 @@ function Slider() {
 }
 
 
-export default withRouter(Slider);
+export default withRouter(Resultproduct);

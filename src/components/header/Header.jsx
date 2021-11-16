@@ -30,7 +30,7 @@ function Header(searchTerm) {
     <header className="header">
       <Search onSubmit={onSubmit} />
       <div className="logoheader">
-        <img className="imgheader" src={Cheesecake}></img>
+        <a href="/"><img className="imgheader" src={Cheesecake}></img></a>
       </div>
       <nav className={`navbar show-nav ${ showLinks ? "show_nav" : "hide-nav" } `}>
         <ul className="navbar_links">
@@ -40,7 +40,7 @@ function Header(searchTerm) {
             </a>
           </li>
           <li className="navbar_item slideInDown-2">
-            <a href="/DisplayScan" className="navbar_link">
+            <a href="/ProductScan" className="navbar_link">
               Je scanne
             </a>
           </li>

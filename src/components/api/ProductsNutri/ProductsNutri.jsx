@@ -4,14 +4,14 @@ import ProductsNutriBack from './ProductsNutriBack';
 import ProductsNutriFront from './ProductsNutriFront';
 
 
-function ProductsNutri( {slide, handleFlip, isFlip} ) {
+function ProductsNutri( {product, handleFlip, isFlip} ) {
   
 
     return (
 
         <div onClick={handleFlip}  className={`card ${isFlip ? 'flip' : ''}`}> 
       {isFlip ? 
-      <ProductsNutriBack slide={slide} />
+      <ProductsNutriBack product={product} />
       :
       <ProductsNutriFront />
     }   
