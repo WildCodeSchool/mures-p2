@@ -61,6 +61,7 @@ function Slider() {
                 ))}
             </Carousel>
             </main>
+
     )
 }
 

@@ -3,6 +3,7 @@
     margin-top: 100px;
     margin-left: 75px;
     color: #467302;
+    width: 100%;
 }
 .carousel-root{
    position: fixed;
@@ -49,6 +50,8 @@
     border: 2px solid #FFFFFF;
     color: #467302;
 }
+
+
 .carousel .overlay__title{
     display: flex;
     text-align: center;
