@@ -15,6 +15,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 function App() {
   const [product, setProduct] = useState("");
+  
   const initialState = "";
   const getOpenFoodFact = async () => {
     // Send the request
@@ -29,6 +30,7 @@ function App() {
 
 
   return (
+    
     <div className="App">
       <Router>
       <Header />

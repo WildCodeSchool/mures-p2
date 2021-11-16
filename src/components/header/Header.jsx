@@ -30,7 +30,7 @@ function Header() {
     <head className="header">
       <Search onSubmit={onSubmit} />
       <div className="logoheader">
-        <img className="imgheader" src={Cheesecake}></img>
+        <img className="imgheader" src={Cheesecake} alt=""></img>
       </div>
       <nav className={`navbar show-nav ${ showLinks ? "show_nav" : "hide-nav" } `}>
         <ul className="navbar_links">

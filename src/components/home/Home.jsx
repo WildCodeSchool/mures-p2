@@ -10,7 +10,7 @@ return (
     <main className="home">
         <section className="body">
             <div className="logomain">
-                <img className="imgmain" src={logo}></img>
+                <img className="imgmain" src={logo} alt=""></img>
             </div>
 
             <div className="buttonhome">
