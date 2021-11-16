@@ -29,6 +29,9 @@ function Resultproduct() {
 
     return (
             <main className="slider">
+                <div className="productName">
+                    <h1>{searchTerm}</h1>
+                </div>
             <Carousel 
               autoPlay
               interval={6000} 
