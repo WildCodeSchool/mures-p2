@@ -27,7 +27,7 @@ function Header(searchTerm) {
 
 
   return (
-    <head className="header">
+    <header className="header">
       <Search onSubmit={onSubmit} />
       <div className="logoheader">
         <img className="imgheader" src={Cheesecake}></img>
@@ -54,7 +54,7 @@ function Header(searchTerm) {
           <span className="burger-bar"></span>
         </button>
       </nav>
-    </head>
+    </header>
   );
 }
 export default withRouter(Header);

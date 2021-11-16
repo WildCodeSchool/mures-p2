@@ -8,9 +8,11 @@ import axios from "axios";
 import ProductScan from "./components/ProductScan/ProductScan";
 import Home from "./components/home/Home";
 import Contact from "./components/contact/Contact";
-import Resultproduct from "./components/api/Resultproduct";
+import Resultproduct from "./components/api/ResultProduct";
 import DisplayCode from "./components/api/DisplayCode";
+import Slider from "./components/api/ResultProduct";
 import ProductId from "./components/api/ProductId/ProductId";
+
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
@@ -32,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Header />
+        <Header />
           <Switch>
             <Route exact path="/">
               <Home />
@@ -50,8 +52,8 @@ function App() {
             <ProductId product={product} setProduct={setProduct}/>
             </Route>
           </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }
