@@ -10,12 +10,7 @@ import "./DisplayCode.css"
 
 function DisplayCode({ product }) {
  
-  const [ isFlip, setIsFlip ] = useState(false);
 
-
-  const handleFlip = () => {
-    setIsFlip(!isFlip)
-  }
 
   return (
 
@@ -23,12 +18,12 @@ function DisplayCode({ product }) {
         
       <article className='DisplayCode'>
      
-                    <ProductsInfos product={product} handleFlip={handleFlip} isFlip={isFlip} />
-                    <ProductsIngredient product={product} handleFlip={handleFlip} isFlip={isFlip}/>
-                    <ProductsNutri product={product} handleFlip={handleFlip} isFlip={isFlip}/>
-                    <ProductProxi product={product} handleFlip={handleFlip} isFlip={isFlip}/>
-                    <Alternatives product={product} handleFlip={handleFlip} isFlip={isFlip}/>
-                  <ProductsPack product={product} handleFlip={handleFlip} isFlip={isFlip}/>
+                    <ProductsInfos product={product} />
+                    <ProductsIngredient product={product} />
+                    <ProductsNutri product={product} />
+                    <ProductProxi product={product} />
+                    <Alternatives product={product} />
+                  <ProductsPack product={product} />
                 </article>
     </div>
   )
