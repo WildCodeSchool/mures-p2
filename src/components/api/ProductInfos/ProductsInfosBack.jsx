@@ -20,18 +20,7 @@ function ProductsInfosBack( {product}) {
             <div className="detailProducts">
                 <p><u>Code barre </u>:  {product.code}</p>
                 <p><u>Marque </u>: {product.brands_tags}</p>
-                <p><u>Ajouter aux favoris </u>: </p>
-            </div>
-            <div className="fav">
-            <div
-                className={isFav ? "isFavorite" : "notFavorite"}
-                onClick={handleClickFav}
-                >
-                </div> 
             </div>    
-    
-        
-        
         </div>
     );
 }
