@@ -6,7 +6,7 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import ProductScan from "./components/ProductScan/ProductScan";
 import Home from "./components/home/Home";
-import Contacts from "./components/contact/Contacts";
+import Contact from "./components/contact/Contact";
 import Resultproduct from "./components/api/Resultproduct";
 import ProductId from "./components/api/ProductId/ProductId";
 
@@ -28,8 +28,8 @@ function App() {
             <Route path="/ProductScan">
               <ProductScan product={product} setProduct={setProduct}/>
             </Route>
-            <Route path="/contact">
-              <Contacts />
+            <Route path="/Contact">
+              <Contact />
             </Route>
             <Route path="/Resultproduct/:searchTerm">
               <Resultproduct />
