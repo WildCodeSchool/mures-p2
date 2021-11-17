@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import Alternatives from "./Alternatives";
+import React, { useState } from 'react';
+import Alternatives from "./Alternatives/Alternatives";
 import ProductsInfos from './ProductInfos/ProductsInfos';
 import ProductsIngredient from './ProductsIngredient/ProductsIngredient';
 import ProductsNutri from './ProductsNutri/ProductsNutri';
-import ProductsPack from "./ProductsPack"
-import ProductsProxi from './ProductsProxi';
+import ProductsPack from "./ProductsPack/ProductsPack"
+import ProductProxi from './Proxi/ProductProxi';
 import "./DisplayCode.css"
 
 
@@ -24,11 +24,11 @@ function DisplayCode({ product }) {
       <article className='DisplayCode'>
      
                     <ProductsInfos product={product} handleFlip={handleFlip} isFlip={isFlip} />
-                    <ProductsIngredient product={product} />
-                    <ProductsNutri product={product} />
-                    <ProductsProxi product={product} />
-                    <Alternatives product={product} />
-                  <ProductsPack product={product} />
+                    <ProductsIngredient product={product} handleFlip={handleFlip} isFlip={isFlip}/>
+                    <ProductsNutri product={product} handleFlip={handleFlip} isFlip={isFlip}/>
+                    <ProductProxi product={product} handleFlip={handleFlip} isFlip={isFlip}/>
+                    <Alternatives product={product} handleFlip={handleFlip} isFlip={isFlip}/>
+                  <ProductsPack product={product} handleFlip={handleFlip} isFlip={isFlip}/>
                 </article>
     </div>
   )
