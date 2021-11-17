@@ -1,3 +1,16 @@
+
+body{
+background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../../assets/home.jpg) ;
+
+  background-repeat: no-repeat;
+  background-size: 1900px;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+}
+
+
 .productName h1{
     position: relative;
     margin-top: 100px;
@@ -6,6 +19,7 @@
     width: 100%;
 }
 .carousel-root{
+
    position: fixed;
    margin-top: 30px;
    margin-bottom: 100px;
@@ -18,7 +32,6 @@
 .slider{
     width: 100vw;
     height: 100vh;
-    
 }
 
 .slider-wrapper .imgslide{

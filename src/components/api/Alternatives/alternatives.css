@@ -1,22 +1,24 @@
 .alternative{
   grid-column: 1;
   grid-row: 4;
-  width: 340px;
-  height: 250px;
+  width: 95vw;
+  height: 37vh;
   margin-top: 30px;
   border-radius: 10px;
   background-color:#FFDCBD ;
   background-size: cover;
   box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
+  transform-style: preserve-3d;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0))
-    translateY(var(--translate-y, 0));
+  translateY(var(--translate-y, 0));
 }
+
+
 
 h1.text-center{
   display: flex;
   font-size: 15px;
   justify-content: center;
-
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin: 30px;
@@ -64,6 +66,10 @@ button:active{
 
 @media screen and (min-width: 767px){
   .alternative{
+
+    width: 30vw;
+    height: 37vh;
+    margin: 0 0 0 0;
     grid-column: 3;
     grid-row: 2;
     }
