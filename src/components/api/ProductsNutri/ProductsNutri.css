@@ -1,28 +1,27 @@
-
 .nutrition{
     grid-column: 1;
     grid-row: 3;
     width: 340px;
-    height: 250px;
-    margin-top: 30px;
+    height: 300px;
     border-radius: 10px;
     background-color:#FFDCBD ;
     background-size: cover;
     box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
-    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+    translateY(var(--translate-y, 0));
 }
 table{
     border-collapse: collapse;
- 
 }
 
 td, th{
     border: 1px solid black;
-    height: 30px; 
+    height: 30px;
 }
 
 .nutrition caption{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 15px;
     font-weight: bold;
 }
@@ -30,7 +29,7 @@ td, th{
 .caract{
     background-color: #84BF04;
     color: #FFFFFF;
-    width: 110px;
+    width: 150px;
 }
 .td1-3{
     background-color: #e2fad3;
@@ -38,6 +37,11 @@ td, th{
 }
 .td2-4{
     background-color: #FFFFFF;
+}
+
+.nutri-score{
+    width: 100px;
+    height: 50px;
 }
 
 @media screen and (min-width: 767px){
