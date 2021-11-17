@@ -20,7 +20,6 @@ function Search(props) {
         props.onSubmit(searchTerm)
     }
 
- 
 
     return (
      
