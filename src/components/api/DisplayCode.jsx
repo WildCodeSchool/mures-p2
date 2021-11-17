@@ -24,20 +24,11 @@ function DisplayCode({ product }) {
       <article className='DisplayCode'>
      
                     <ProductsInfos product={product} handleFlip={handleFlip} isFlip={isFlip} />
-<<<<<<< HEAD
                     <ProductsIngredient product={product} handleFlip={handleFlip} isFlip={isFlip}/>
                     <ProductsNutri product={product} handleFlip={handleFlip} isFlip={isFlip}/>
                     <ProductProxi product={product} handleFlip={handleFlip} isFlip={isFlip}/>
                     <Alternatives product={product} handleFlip={handleFlip} isFlip={isFlip}/>
                   <ProductsPack product={product} handleFlip={handleFlip} isFlip={isFlip}/>
-=======
-                    <ProductsIngredient product={product} handleFlip={handleFlip} isFlip={isFlip} />
-                    <ProductsNutri product={product} handleFlip={handleFlip} isFlip={isFlip}/>
-                    <ProductsProxi product={product} handleFlip={handleFlip} isFlip={isFlip}/>
-                    <Alternatives product={product} handleFlip={handleFlip} isFlip={isFlip}/>
-                    <ProductsPack product={product} handleFlip={handleFlip} isFlip={isFlip}/>
-
->>>>>>> 759972da08edd3baa244926ce36e5ac32c3ac0dd
                 </article>
     </div>
   )
