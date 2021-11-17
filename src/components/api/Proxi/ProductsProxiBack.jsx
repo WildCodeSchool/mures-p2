@@ -2,6 +2,7 @@
 import React from "react";
 import "./productsProxi.css";
 
+
 export default function ProductsProxi({ product }) {
 
   let lat = "";
