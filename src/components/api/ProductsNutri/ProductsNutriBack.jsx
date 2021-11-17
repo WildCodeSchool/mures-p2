@@ -1,22 +1,25 @@
 import React from 'react'
 import "./ProductsNutri.css"
 
+
 export default function ProductsNutri({product}) {
+
+
     return (
         <article className='nutrition' > 
             <table>
                 <caption>Informations nutritionnelles</caption>
                 <tr>
                     <th className="caract">Matières grasses: </th>
-                    <td className="td1-3">{product.nutrient_levels.fat}</td>
+                    <td className="td1-3">{product.nutriments.fat_100g} gr</td>
                 </tr>
                 <tr>
                     <th className="caract">Sel: </th>
-                    <td className="td2-4">{product.nutrient_levels.salt}</td>
+                    <td className="td2-4">{product.nutriments.salt_100g} gr</td>
                 </tr>
                 <tr>
                     <th className="caract">Sucre: </th>
-                    <td className="td1-3">{product.nutrient_levels.sugars}</td>
+                    <td className="td1-3">{product.nutriments.sugars_100g} gr</td>
                 </tr>
                 <tr>
                     <th className="caract">Taille d'une portion : </th>
@@ -24,11 +27,12 @@ export default function ProductsNutri({product}) {
                 </tr>
                 <tr>
                     <th className="caract">Groupe Nova : </th>
-                    <td className="td1-3">{product.nova_group}</td>
+                    <td className="td1-3">{product.nova_group}</td>         
                 </tr>
                 <tr>
                     <th className="caract">Nutriscore : </th>
-                    <td className="td2-4">{product.nutrition_grades}</td>
+                    <td className="td2-4"><img className='nutri-score' src={"https://fr.openfoodfacts.org/images/misc/nutriscore-" + product.nutrition_grade_fr + ".svg"} alt={''} /> </td>
+                    
                 </tr>
             </table>
       </article>

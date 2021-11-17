@@ -17,6 +17,7 @@ const ProductId = ({setProduct, product}) => {
           .then((response) => response.data)
           .then((data) => {
             setProduct(data.product);
+            console.log(data.product);
           });
         } catch {
           alert('Produit non trouvé, faites une nouvelle recherche')
@@ -38,9 +39,6 @@ const ProductId = ({setProduct, product}) => {
             <DisplayCode product={product} /> :
             <h1>Faites une recherche!</h1>
         }
-      
-   
-      
     </div>
   );
 };
