@@ -28,7 +28,8 @@ function DisplayCode({ product }) {
                     <ProductsNutri product={product} handleFlip={handleFlip} isFlip={isFlip}/>
                     <ProductProxi product={product} handleFlip={handleFlip} isFlip={isFlip}/>
                     <Alternatives product={product} handleFlip={handleFlip} isFlip={isFlip}/>
-                  <ProductsPack product={product} handleFlip={handleFlip} isFlip={isFlip}/>
+                    <ProductsPack product={product} handleFlip={handleFlip} isFlip={isFlip}/>
+                    
                 </article>
     </div>
   )
