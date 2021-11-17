@@ -52,11 +52,13 @@ td, th{
     }
 }
 
-.TitleFront{
-    grid-column: 1;
-    grid-row: 1;
+.titleFront{
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    color: #467302;
+  }
+  
+  .icon{
     color: #467302;
   }

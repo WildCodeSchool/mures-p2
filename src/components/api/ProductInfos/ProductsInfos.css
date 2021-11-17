@@ -28,6 +28,8 @@
   .card .front{
     transform: rotateY(0deg);
     left: 0;
+    width: inherit;
+    height: inherit;
   }
   
   
@@ -92,11 +94,13 @@ h1{
     font-size: 2rem;
 }
 
-.TitleFront{
-  grid-column: 1;
-  grid-row: 1;
+.titleFront{
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+  color: #467302;
+}
+
+.icon{
   color: #467302;
 }
