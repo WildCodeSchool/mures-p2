@@ -30,6 +30,7 @@ function Resultproduct() {
 
     return (
             <main className="slider">
+                <section className="sliderside">
 
                       <Helmet>
         <title>Résultats</title>
@@ -56,6 +57,7 @@ function Resultproduct() {
                     </div>
                 ))}
             </Carousel>
+            </section>
             </main>
 
     )
