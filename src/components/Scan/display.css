@@ -5,7 +5,7 @@
 .displayScan{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    background: linear-gradient(rgba(185, 214, 122, 0.2), rgba(132,191,4,0.2)),
     url(../../assets/home.jpg);
   background-repeat: no-repeat;
   background-size: 1900px;

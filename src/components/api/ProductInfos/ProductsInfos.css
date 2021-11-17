@@ -28,6 +28,8 @@
   .card .front{
     transform: rotateY(0deg);
     left: 0;
+    width: inherit;
+    height: inherit;
   }
   
   
