@@ -2,12 +2,14 @@
     grid-column: 1;
     grid-row: 2;
     width: 340px;
-    height: 250px;
+    height: 300px;
     margin-top: 20px;
     border-radius: 10px;
     background-color:#FFDCBD ;
     background-size: cover;
     box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+    translateY(var(--translate-y, 0));
 }
 table{
     border-collapse: collapse;
@@ -15,8 +17,7 @@ table{
 }
 
 td, th{
-    border: 1px solid black;
-    
+    border: 1px solid black; 
 }
 
 .alimentation caption{
@@ -45,3 +46,4 @@ td, th{
         grid-row: 1;
     }
 }
+ 

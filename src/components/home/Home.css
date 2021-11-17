@@ -10,9 +10,11 @@
   background-position: center center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr .5fr 1fr;
   width: 100%;
   min-height: 800px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 .logomain{
   display: flex;
@@ -24,7 +26,9 @@
   height: 150px;
 }
 
-.buttonScan{
+
+
+.buttonscan{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +40,7 @@
   border-radius:  30px;
   color: black;
   font-weight: 500;
+  cursor: pointer;
 }
 .wrapbutton{
   display: flex;
@@ -43,32 +48,24 @@
   grid-row: 2;
   justify-content: center;
   align-items: flex-start;
+  height: 100px;
 }
 
-.buttonmenu{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #84BF04;
-  width: 180px;
-  height: 50px;
-  font-size: 1.2rem;
-  border: 2px solid #FFFFFF;
-  border-radius:  30px;
-  color: black;
-  font-weight: 500;
-}
-.wrapbutton2{
-  display: flex;
+.hometext{
   grid-column: 1;
-  grid-row: 2;
-  justify-content: center;
-  padding: 100px;
+  grid-row: 3;
+  background-color: rgb(132,191,4, 0.5);
 }
+
+.hometext .p{
+  font-size: 15px;
+}
+
 
 @media screen and (min-width: 767px){
   .body{
-    min-height: 1000px;
+    margin-top: 80px;
+    min-height: 800px;
   }
 }
 

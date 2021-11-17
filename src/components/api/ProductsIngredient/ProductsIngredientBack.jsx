@@ -7,12 +7,8 @@ function ProductsIngredientBack({product}) {
             <table>
                 <caption>Caractéristiques produit</caption>
                 <tr>
-                    <th className="caract">Ingredients :</th>
-                    <td className="td1-3">{product.ingredients_text_with_allergens}</td>
-                </tr>
-                <tr>
-                    <th className="caract">Traces éventuelles : </th>
-                    <td className="td2-4">{product.traces}</td>
+                    <th className="caract">Ingredients & Traces éventuelles :</th>
+                    <td className="td1-3">{product.ingredients_text_fr}</td>
                 </tr>
                 <tr>
                     <th className="caract">Allergènes : </th>
@@ -20,7 +16,7 @@ function ProductsIngredientBack({product}) {
                 </tr>
                 <tr>
                     <th className="caract">Catégories : </th>
-                    <td className="td2-4">{product.categories}</td>
+                    <td className="td2-4">{product.categories_old}</td>
                 </tr>
             </table>
       </article>
