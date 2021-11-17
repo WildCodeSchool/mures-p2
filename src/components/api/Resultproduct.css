@@ -1,3 +1,4 @@
+
 body{
 background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../../assets/home.jpg) ;
@@ -9,6 +10,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
   height: 100vh;
 }
 
+
 .productName h1{
     position: relative;
     margin-top: 100px;
@@ -17,6 +19,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     width: 100%;
 }
 .carousel-root{
+
    position: fixed;
    margin-top: 30px;
    margin-bottom: 100px;
@@ -29,7 +32,6 @@ background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
 .slider{
     width: 100vw;
     height: 100vh;
-    
 }
 
 .slider-wrapper .imgslide{
