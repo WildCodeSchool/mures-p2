@@ -1,10 +1,8 @@
-
-
 .card {
     margin-top: 20px;
     cursor: pointer;
     width: 340px;
-    height: 250px;
+    height: 300px;
     border-radius: 10px;
     background-color:#FFDCBD ;
     background-size: cover;
@@ -13,7 +11,6 @@
     transition: 300ms;
     transform: perspective(1000px) rotateY(var(--rotate-y, 0))
     translateY(var(--translate-y, 0));
-
   }
   
   
