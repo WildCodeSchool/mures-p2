@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import axios from 'axios';
 import {useParams} from "react-router-dom";
 import { withRouter } from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 
 
 function Resultproduct() {
@@ -29,6 +30,9 @@ function Resultproduct() {
 
     return (
             <main className="slider">
+                      <Helmet>
+        <title>Résultats</title>
+        </Helmet>
             <Carousel 
               autoPlay
               interval={6000} 

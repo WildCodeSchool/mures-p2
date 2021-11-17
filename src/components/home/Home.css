@@ -1,55 +1,78 @@
-*{
+* {
   margin: 0;
   padding: 0;
-
 }
-.body{
-  background-image: url(../../assets/home.jpg) ;
+.body {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../../assets/home.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1900px;
   background-position: center center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 100%;
-  min-height: 740px;
-}
-.logomain{
   display: flex;
-  grid-column: 1;
-  grid-row: 1;
-  justify-self: center;
-  align-self: center;
-  width: 150px;
-  height: 150px;
-}
-
-.buttonscan{
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #84BF04;
-  width: 180px;
-  height: 50px;
-  font-size: 1.2rem;
-  border: 2px solid #FFFFFF;
-  border-radius:  30px;
-  color: black;
-  font-weight: 500;
-}
-.wrapbutton{
-  display: flex;
-  grid-column: 1;
-  grid-row: 2;
-  justify-content: center;
-  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
 }
 
+.intro{
+  color: #ffffff;
+  font-style: italic;
+  width: 50%;
+  margin-bottom: 100px;
+  font-size: 1.5rem;
 
-@media screen and (min-width: 767px){
-  .body{
-    margin-top: 80px;
-    min-height: 740px;
+}
+
+.img-container{
+height: 200px;
+display: flex;
+align-items: center;
+}
+
+ .scan-img {
+    border-radius: 20px;
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    height: 10rem;
+
+}
+
+.scan-img:hover{
+  height: 12rem;
+  filter: brightness(150%);
+  transition: height 0.9s;
+  transition: filter 0.9s;
+  cursor: pointer;
+}
+
+@keyframes slideIn {
+  0% {
+    margin-bottom: 0;
+  }
+
+  50% {
+    margin-bottom: 1rem;
+  }
+
+  100% {
+    margin-bottom: 0;
   }
 }
 
+
+
+@media screen and (min-width: 767px) {
+  .body {
+    margin-top: 80px;
+    margin-bottom: 0;
+    min-height: 850px;
+  }
+
+.intro{
+  font-size: 2.5rem;
+}  
+}
