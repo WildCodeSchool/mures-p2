@@ -10,6 +10,7 @@
     box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
     transform: perspective(1000px) rotateY(var(--rotate-y, 0))
     translateY(var(--translate-y, 0));
+    overflow: hidden;
 }
 table{
     border-collapse: collapse;
