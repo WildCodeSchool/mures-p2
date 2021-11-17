@@ -16,4 +16,4 @@ function ProductsIngredientFront() {
     );
 }
 
-export default ProductsIngredientFront;
+export default ProductsIngredientFront
