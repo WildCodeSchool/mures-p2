@@ -25,7 +25,7 @@ function DisplayCode({ product }) {
      
                     <ProductsInfos product={product} handleFlip={handleFlip} isFlip={isFlip} />
                     <ProductsIngredient product={product} />
-                    <ProductsNutri product={product} />
+                    <ProductsNutri product={product} handleFlip={handleFlip} isFlip={isFlip}/>
                     <ProductsProxi product={product} />
                     <Alternatives product={product} />
                   <ProductsPack product={product} />
