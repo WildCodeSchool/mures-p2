@@ -3,9 +3,15 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     padding-left: 5px;
     padding-bottom: 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../../assets/home.jpg);
+  background-repeat: no-repeat;
+  background-size: 1900px;
+  background-position: center center;
 }
 
 @media screen and (min-width: 767px){

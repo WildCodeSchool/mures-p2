@@ -1,17 +1,25 @@
 import React, { useState, useRef, useEffect } from "react";
+import {Helmet} from 'react-helmet';
 
 import DisplayCode from "../api/DisplayCode";
 import DisplayScan from "../Scan/DisplayScan";
 import "../Scan/display.css"
 
 const ProductScan = ({setProduct, product}) => {
+
+
+
  const reloader = () => {
   window.location.reload()
  }
 
   return (
+
+
     <main className="productScan">
-      
+      <Helmet>
+        <title>Scanner</title>
+        </Helmet>
       {product === ""
       ? <DisplayScan product={product}  setProduct={setProduct}/>
       :
