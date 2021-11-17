@@ -6,7 +6,7 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import ProductScan from "./components/ProductScan/ProductScan";
 import Home from "./components/home/Home";
-import Contact from "./components/contact/Contact";
+import Contact from "./components/contact/Contacts";
 import Resultproduct from "./components/api/Resultproduct";
 import ProductId from "./components/api/ProductId/ProductId";
 
