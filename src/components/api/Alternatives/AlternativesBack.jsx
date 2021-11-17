@@ -31,7 +31,7 @@ function Alternatives({ product }) {
     const handleRedirect = () => {
         console.log("handleRedirect")
         console.log("alternativeProduct", alternativeProduct)
-        history.push(`/ProductId/${ alternativeProduct.id }`)
+        window.location.assign(`/ProductId/${ alternativeProduct.id }`)
         
     }
 

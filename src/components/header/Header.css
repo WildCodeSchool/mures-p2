@@ -16,10 +16,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 10%;
     padding-top: 0;
     grid-column: 1;
     grid-row: 1;
+    
 }
 .imgheader{
     width: 55px;

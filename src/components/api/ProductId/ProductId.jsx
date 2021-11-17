@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { useParams } from "react-router";
 import DisplayCode from "../DisplayCode";
 import axios from "axios";
+import Helmet from 'react-helmet';
 
 
 const ProductId = ({setProduct, product}) => {
@@ -29,7 +30,11 @@ const ProductId = ({setProduct, product}) => {
 
 
   return (
+    
     <div className="productId">
+            <Helmet>
+        <title>Produit</title>
+        </Helmet>
        { product !== "" ? 
             <DisplayCode product={product} /> :
             <h1>Faites une recherche!</h1>
