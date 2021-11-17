@@ -1,8 +1,8 @@
 .alimentation{
     grid-column: 1;
     grid-row: 2;
-    width: 340px;
-    height: 300px;
+    width: 95vw;
+    height: 37vh;
     margin-top: 20px;
     border-radius: 10px;
     background-color:#FFDCBD ;
@@ -46,6 +46,9 @@ td, th{
     .alimentation{
         grid-column: 2;
         grid-row: 1;
+        width: 30vw;
+        height: 37vh;
+        margin: 0 0 0 0;
     }
 }
  

@@ -46,19 +46,16 @@ function Alternatives({ product }) {
 
     return (
             <article className="alternative">
-                <div>
-                    <h1 className="text-center">Recommandation</h1>
-                </div>
                 <div className="info-product">
                     {
                         isLoading ? <p>Chargement en cours...</p> :
                             alternativeProduct && (
                                 <>
-                                    <p>{alternativeProduct.product_name}</p>
-                                    <p>Code barre : {alternativeProduct.code} </p>
-                                    <p>NutriScore : {alternativeProduct.nutrition_grades}</p>
-                                    <p>Categorie : {alternativeProduct.categories}</p>
-                                    <p>countrie : {alternativeProduct.countries}</p>
+                                    <h1 className="text-center">{alternativeProduct.product_name}</h1>
+                                    <p><u>Code barre</u> : {alternativeProduct.code} </p>
+                                    <p><u>NutriScore</u> : {alternativeProduct.nutrition_grades}</p>
+                                    <p><u>Categorie</u> : {alternativeProduct.categories}</p>
+                                    <p><u>countrie</u> : {alternativeProduct.countries}</p>
                                     <span
                                         id="favorite"
                                         className={isFavorite ? "isFavorite" : "notFavorite"}
