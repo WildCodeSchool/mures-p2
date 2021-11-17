@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
   }
+
   
-  body {
+  .allPageContact {
+    margin-top: 80px;
     width: 100%;
     background-color: white;
-    display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
   
   .wrapper {
@@ -22,7 +25,7 @@
     perspective: 1000px;
   }
   
-  img {
+  .imgContact {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -70,8 +73,12 @@
     padding: 8rem;
     background-color: #467302;
   }
+
+  .textareaContact {
+    border-radius: 4px;
+  }
   
-  input {
+  .emailContact {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -84,6 +91,7 @@
   
   .doorContainer {
     display: flex;
+    justify-content: space-between; 
   }
   
   .p1 {
@@ -104,16 +112,18 @@
     content: "⚠";
   }
   
-  .sainement {
+  .healthier {
     color: #467302;
-    padding: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
   }
 
-  .who {
+  .whoWeAre {
       color: #467302;
   }
 
-  form {
+  .contactContainer {
     max-width: 400px;
     margin: 0 auto;
     display: flex;
@@ -121,7 +131,7 @@
     flex-direction: column;
   }
   
-  input[type="submit"] {
+  .submitContact[type="submit"] {
     background: #84bf04;
     color: white;
     text-transform: uppercase;
@@ -134,13 +144,7 @@
     letter-spacing: 10px;
   }
   
-  .sainement {
-      display: flex;
-      justify-content: center;
-  }
-  
-  button[type="submit"]:hover,
-  input[type="submit"]:hover {
+  .submitContact[type="submit"]:hover {
     background: #f2994b;
   }
   
@@ -153,7 +157,7 @@
         flex: 50%;
         margin-bottom: 10px;
   }
-    .who {
+    .whoWeAre {
         display: flex;
         justify-content: center;
   }  
