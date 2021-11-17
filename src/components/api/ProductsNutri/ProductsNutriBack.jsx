@@ -1,7 +1,10 @@
 import React from 'react'
 import "./ProductsNutri.css"
 
+
 export default function ProductsNutri({product}) {
+
+
     return (
         <article className='nutrition' > 
             <table>
@@ -24,11 +27,12 @@ export default function ProductsNutri({product}) {
                 </tr>
                 <tr>
                     <th className="caract">Groupe Nova : </th>
-                    <td className="td1-3">{product.nova_group}</td>
+                    <td className="td1-3">{product.nova_group}</td>         
                 </tr>
                 <tr>
                     <th className="caract">Nutriscore : </th>
-                    <td className="td2-4">{product.nutrition_grades}</td>
+                    <td className="td2-4"><img className='nutri-score' src={"https://fr.openfoodfacts.org/images/misc/nutriscore-" + product.nutrition_grade_fr + ".svg"} alt={''} /> </td>
+                    
                 </tr>
             </table>
       </article>

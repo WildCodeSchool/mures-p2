@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import axios from 'axios';
 import {useParams} from "react-router-dom";
 import { withRouter } from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 
 
 function Resultproduct() {
@@ -29,9 +30,15 @@ function Resultproduct() {
 
     return (
             <main className="slider">
+
+                      <Helmet>
+        <title>Résultats</title>
+        </Helmet>
+
                 <div className="productName">
                     <h1>{searchTerm}</h1>
                 </div>
+
             <Carousel 
               autoPlay
               interval={6000} 
@@ -43,8 +50,8 @@ function Resultproduct() {
                     <div key={slide._id}>
                         <img className="imgslide"   src={slide.image_url} />
                         <div className="overlay">
-                          <a href={`/ProductId/${slide._id}`}> <button className="overlay__button">Go to Product</button> </a> 
                             <h2 className="overlay__title">{slide.product_name}</h2>
+                            <a href={`/ProductId/${slide._id}`}> <button className="overlay__button">Go to Product</button> </a> 
                         </div>
                     </div>
                 ))}
