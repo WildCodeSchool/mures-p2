@@ -8,7 +8,7 @@ return (
     <div className="home">
     <section className="body" >
         <div className="containerbutton">
-           <div className="buttonconnect">
+            <div className="buttonconnect">
                 <button className="button2">Je me connecte</button>
             </div>
         </div>
