@@ -3,8 +3,8 @@
   padding: 0;
 }
 .body {
-  background: linear-gradient(rgba(185, 214, 122, 0.2), rgba(132,191,4,0.2)),
-    url(../../assets/home.jpg);
+  background: linear-gradient(rgba(197, 218, 152, 0.2), rgba(187, 211, 136, 0.2)),
+  url(../../assets/home.jpg);
   background-repeat: no-repeat;
   background-size: 1900px;
   background-position: center center;
