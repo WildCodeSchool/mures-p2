@@ -1,25 +1,27 @@
 
 body{
-background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../../assets/home.jpg) ;
-
+    background: linear-gradient(rgba(185, 214, 122, 0.2), rgba(132,191,4,0.2)),
+    url(../../assets/home.jpg);
   background-repeat: no-repeat;
-  background-size: 1900px;
+  background-size: 3000px;
   background-position: center center;
+  position: fixed;
   width: 100vw;
   height: 100vh;
+  
 }
 
 
 .productName h1{
     position: relative;
     margin-top: 100px;
-    margin-left: 75px;
-    color: #467302;
+    margin-left: 10px;
+    color: #FFFFFF;
     width: 100%;
+    font-size: 40px;
+    font-weight: bold;
 }
 .carousel-root{
-
    position: fixed;
    margin-top: 30px;
    margin-bottom: 100px;
@@ -69,6 +71,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     display: flex;
     text-align: center;
     align-items: center; 
+
 }
 
 .carousel .overlay__button{

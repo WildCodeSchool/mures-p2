@@ -6,7 +6,7 @@
   background: linear-gradient(rgba(185, 214, 122, 0.2), rgba(132,191,4,0.2)),
     url(../../assets/home.jpg);
   background-repeat: no-repeat;
-  background-size: 1900px;
+  background-size: cover;
   background-position: center center;
   display: flex;
   flex-direction: column;
