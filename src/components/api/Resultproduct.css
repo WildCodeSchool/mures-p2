@@ -1,0 +1,110 @@
+
+body{
+    background: linear-gradient(rgba(185, 214, 122, 0.2), rgba(132,191,4,0.2)),
+    url(../../assets/home.jpg);
+  background-repeat: no-repeat;
+  background-size: 3000px;
+  background-position: center center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+
+.productName h1{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 10px;
+    color: #FFFFFF;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+}
+.carousel-root{
+   position: fixed;
+   margin-top: 30px;
+   margin-bottom: 100px;
+   width: 100%;
+   height: auto;
+}
+.carousel{
+    position: relative;
+}
+.slider{
+    width: 100vw;
+    height: 100vh;
+}
+
+.slider-wrapper .imgslide{
+    width: 250px;
+    height: 350px;
+}
+
+
+.carousel .thumbs{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.carousel .thumb{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+   
+.carousel .overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0.4rem 1.5rem;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.6) ;
+    border: 2px solid #FFFFFF;
+    color: #467302;
+}
+
+
+.carousel .overlay__title{
+    display: flex;
+    text-align: center;
+    align-items: center; 
+
+}
+
+.carousel .overlay__button{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #467302;
+    background-color: transparent ;
+    cursor: pointer;
+
+}
+
+@media screen and (min-width: 767px)  {
+    .carousel-root{
+        width: 767px;
+        margin-left: 20%;
+        margin-right: 20%;
+     }
+    .productName h1{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        text-align: center;
+        margin-top: 100px;
+        width: 100%;
+    }
+    .slider{
+        width: 200px;
+        height: 500px;
+    }
+    .slider-wrapper .imgslide{
+        width: 250px;
+        height: 500px;
+    }
+}
+

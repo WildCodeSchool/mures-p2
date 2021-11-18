@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 body {
@@ -29,6 +30,39 @@ img {
 
 .door {
     background-color: #2b0521;
+=======
+
+  }
+
+  
+  .allPageContact {
+    margin-top: 80px;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    width: 250px;
+    border: 5px solid black;
+    position: relative;
+    perspective: 1000px;
+  }
+  
+  .imgContact {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .door {
+    background-color: #730217;
+>>>>>>> 263c8a96f87651eacff8cd8a97fbe884ae7965ae
     height: 100%;
     width: 50%;
     position: absolute;
@@ -37,6 +71,7 @@ img {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+<<<<<<< HEAD
 }
 
 .wrapper:hover #left-door{
@@ -46,3 +81,129 @@ img {
 .wrapper:hover #right-door{
     transform: rotateY(140deg)
 }
+=======
+  }
+  
+  .wrapper:hover #left-door {
+    transform: rotateY(-140deg);
+  }
+  
+  .wrapper:hover #right-door {
+    transform: rotateY(140deg);
+  }
+  
+  #left-door {
+    top: 0;
+    left: 0;
+    border-right: 1px solid black;
+    /* transition */
+    transform-origin: left;
+    transition: transform 0.5s;
+  }
+  
+  #right-door {
+    top: 0;
+    right: 0;
+    border-left: 1px solid black;
+    /* transition */
+    transform-origin: right;
+    transition: transform 0.5s;
+  }
+  
+  .contactsHooksStyle {
+    padding: 8rem;
+    background-color: #467302;
+  }
+
+  .textareaContact {
+    border-radius: 4px;
+  }
+  
+  .emailContact {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .doorContainer {
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .p1 {
+    color: #bf1650;
+  }
+  
+  .p1::before {
+    display: inline;
+    content: "⚠";
+  }
+  
+  .p2 {
+    color: #bf1650;
+  }
+  
+  .p2::before {
+    display: inline;
+    content: "⚠";
+  }
+  
+  .healthier {
+    color: #467302;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .whoWeAre {
+      color: #467302;
+  }
+
+  .contactContainer {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .submitContact[type="submit"] {
+    background: #84bf04;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 10px;
+  }
+  
+  .submitContact[type="submit"]:hover {
+    background: #f2994b;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .doorContainer {
+        display: flex;
+        flex-wrap: wrap;
+  }
+    .doorContainer > div {
+        flex: 50%;
+        margin-bottom: 10px;
+  }
+    .whoWeAre {
+        display: flex;
+        justify-content: center;
+  }  
+  }
+  
+  
+  
+>>>>>>> 263c8a96f87651eacff8cd8a97fbe884ae7965ae

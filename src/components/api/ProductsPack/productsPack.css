@@ -1,0 +1,44 @@
+.products-pack{
+    grid-column: 1;
+    grid-row: 5;
+    width: 95vw;
+    height: 37vh;
+    margin-top: 30px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color:#FFDCBD ;
+    background-size: cover;
+    box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
+
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+    translateY(var(--translate-y, 0));
+  }
+
+  .products-pack caption{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+@media screen and (min-width: 767px){
+  .products-pack{
+    margin-top: 80px;
+    grid-column: 1;
+    grid-row: 2;
+    width: 30vw;
+    height: 37vh;
+    margin: 0 0 0 0;
+  }
+}
+
+.titleFront{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #467302;
+}
+
+.icon{
+  color: #467302;
+}

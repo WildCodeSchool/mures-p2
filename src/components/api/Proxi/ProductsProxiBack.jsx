@@ -2,6 +2,7 @@
 import React from "react";
 import "./productsProxi.css";
 
+
 export default function ProductsProxi({ product }) {
 
   let lat = "";
@@ -20,17 +21,16 @@ export default function ProductsProxi({ product }) {
 
 
   return (
-    
-    <div className="products-proxi">
-      <div className="card">
+    <article className="products-proxi">
+
         <h1 className="title">Où acheter</h1>
 
-        <p> Magasins: {product.stores} </p>
-
+        <p> <u>Magasins:</u> {product.stores} </p>
+        <div>
         <button className="map-button" onClick={handleClick}>
           Près de chez vous
         </button>
-      </div>
-    </div>
+        </div>
+    </article>
   );
 }

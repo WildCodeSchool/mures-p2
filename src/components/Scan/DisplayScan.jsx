@@ -3,7 +3,7 @@ import Scanner from "./Scanner";
 import Result from "./Result";
 import "./display.css";
 import axios from "axios";
-import DisplayCode from "../api/DisplayCode";
+
 
 const DisplayScan = ({setProduct, product}) => {
   const [scanning, setScanning] = useState(false);
@@ -15,18 +15,17 @@ const DisplayScan = ({setProduct, product}) => {
 
    const getOpenFoodFact = async () => {
     // Send the request
-   await axios
+   
+   try{ await axios
       .get(`https://fr.openfoodfacts.org/api/v2/product/${barcode}`)
       .then((response) => response.data)
       .then((data) => {
         setProduct(data.product);
       });
-      console.log(barcode);
-  };
-
-  const goToProductPage = () =>{
-    window.location.href='./DisplayCode';
+    } catch {
+      alert('Produit non trouvé, rééssayez de scanner')
     }
+  };
 
 
   useEffect(() => {

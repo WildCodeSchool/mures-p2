@@ -1,49 +1,36 @@
 import React from 'react';
 import { useState } from "react";
 import "./Search.css";
-import axios from 'axios';
 
+function Search(props) {
 
-function Search() {
+    const [isLoading, setIsLoading] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('');
     
-    const [searchTerm, setSearchTerm] = useState("");
-    const [product, setProduct] = useState('')
-
 
     const handleSearchTerm = (e) => {
-        let value = e.target.value;
-        value.length > 2 && setSearchTerm(value);
+        setSearchTerm(e.target.value)
     };
-    const getOpenFoodFact = () => {
-    // Send the request 
-    const codebarre = 'camembert'
-    axios
-    .get(`https://world.openfoodfacts.org/cgi/search.pl?action=process&search_terms=${codebarre}`)
-    .then((response) => response.data)
-    .then((data) => {
-    setProduct(data.product)
-    console.log(data.product)
-    })
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        props.onSubmit(searchTerm)
     }
-  
+
 
     return (
-        <article className="searchBar">
-            <input 
-            type="text" 
-            name="searchBar" 
-            id="searchBar" 
-            placeholder="Rechercher" 
-            onChange={handleSearchTerm}
-            />
-        <button 
-          className="searchButton"
-          type="button"
-          onClick = {getOpenFoodFact}
-          >
-        </button>
-        </article>
-
+     
+        <div>
+            <form className="searchBar" action="" onSubmit={handleSubmit} >
+                <input
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="Rechercher"
+                    onChange={handleSearchTerm} value={searchTerm} />
+                <button className={!isLoading ? "searchButton" : 'loadingButton'} > </button>
+            </form>
+        </div>
     )
 }
 
