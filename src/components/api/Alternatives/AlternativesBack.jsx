@@ -54,8 +54,8 @@ function Alternatives({ product }) {
                                     <h1 className="text-center">{alternativeProduct.product_name}</h1>
                                     <p><u>Code barre</u> : {alternativeProduct.code} </p>
                                     <p><u>NutriScore</u> : {alternativeProduct.nutrition_grades}</p>
-                                    <p><u>Categorie</u> : {alternativeProduct.categories}</p>
-                                    <p><u>countrie</u> : {alternativeProduct.countries}</p>
+                                    <p><u>Catégorie</u> : {alternativeProduct.categories}</p>
+                                    <p><u>Pays</u> : {alternativeProduct.countries}</p>
                                     <span
                                         id="favorite"
                                         className={isFavorite ? "isFavorite" : "notFavorite"}

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-import "./Contacts.css";
-=======
 import React from 'react';
 import "./Contacts.css"; 
 import ContactsHook from './ContactsHook';
@@ -12,20 +8,9 @@ import paul from "../../assets/paul.png";
 import lucille from "../../assets/lucille.jpeg";
 
 
->>>>>>> 263c8a96f87651eacff8cd8a97fbe884ae7965ae
-
-
 function Contacts() {
     return (
-<<<<<<< HEAD
-        <main className="wrapper">
-            <body>
-            <img src="/assets/unnamed.jpg" alt="profile"/>
-                <div id="left-door" className="door"></div>
-                <div id="right-door" class="door"></div>
-            </body>  
-=======
-        
+       
         <main className="allPageContact">
             <p className="whoWeAre">Qui sommes nous?</p>
             <div className="doorContainer">
@@ -62,7 +47,6 @@ function Contacts() {
                 <ContactsHook/>
             </div>
             
->>>>>>> 263c8a96f87651eacff8cd8a97fbe884ae7965ae
         </main>
     )
 }

@@ -32,9 +32,9 @@ function Resultproduct() {
             <main className="slider">
                 <section className="sliderside">
 
-                      <Helmet>
-        <title>Résultats</title>
-        </Helmet>
+                    <Helmet>
+                        <title>Résultats</title>
+                    </Helmet>
 
                 <div className="productName">
                     <h1>{searchTerm}</h1>
@@ -51,8 +51,8 @@ function Resultproduct() {
                     <div key={slide._id}>
                         <img className="imgslide"   src={slide.image_url} />
                         <div className="overlay">
-                            <h2 className="overlay__title">{slide.product_name}</h2>
-                            <a href={`/ProductId/${slide._id}`}> <button className="overlay__button">Go to Product</button> </a> 
+                        <a href={`/ProductId/${slide._id}`}> <h2 className="overlay__title">{slide.product_name}</h2>
+                              </a> 
                         </div>
                     </div>
                 ))}

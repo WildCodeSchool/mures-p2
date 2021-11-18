@@ -22,10 +22,11 @@ td, th{
 }
 
 .nutrition caption{
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 15px;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 700;
+    color: #467302;
 }
 
 .caract{
@@ -65,4 +66,8 @@ td, th{
   
   .icon{
     color: #467302;
+  }
+
+  .caption {
+      color: #467302 ;
   }

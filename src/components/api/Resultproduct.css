@@ -8,13 +8,11 @@ body{
   position: fixed;
   width: 100vw;
   height: 100vh;
-  
 }
-
 
 .productName h1{
     position: relative;
-    margin-top: 100px;
+    margin-top: 120px;
     margin-left: 10px;
     color: #FFFFFF;
     width: 100%;
@@ -23,7 +21,7 @@ body{
 }
 .carousel-root{
    position: fixed;
-   margin-top: 30px;
+   margin-top: 10px;
    margin-bottom: 100px;
    width: 100%;
    height: auto;
@@ -46,6 +44,7 @@ body{
     display: flex;
     justify-content: center;
     margin: 0;
+    height: 100px;
 }
 
 .carousel .thumb{
@@ -71,18 +70,12 @@ body{
     display: flex;
     text-align: center;
     align-items: center; 
-
-}
-
-.carousel .overlay__button{
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: #467302;
-    background-color: transparent ;
     cursor: pointer;
-
+    
 }
+
+
 
 @media screen and (min-width: 767px)  {
     .carousel-root{

@@ -22,7 +22,7 @@ export default function ProductsNutri({product}) {
                     <td className="td1-3">{product.nutriments.sugars_100g} gr</td>
                 </tr>
                 <tr>
-                    <th className="caract">Taille d'une portion : </th>
+                    <th className="caract">Taille de la portion : </th>
                     <td className="td2-4">{product.serving_size}</td>
                 </tr>
                 <tr>

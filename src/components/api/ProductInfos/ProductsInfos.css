@@ -23,6 +23,9 @@
     position: absolute;
     padding: 1rem;
     backface-visibility: hidden;
+    width: inherit;
+    height: inherit;
+    color: #467302;
   }
   
   .card .front{
@@ -30,24 +33,21 @@
     left: 0;
     width: inherit;
     height: inherit;
+    color: #467302;
   }
-  
-  
   .card .back{
     transform: rotateY(180deg);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr .5fr ;
+    grid-template-rows: 1fr 2fr ;
     grid-column: 1;
     grid-row: 1;
   }
-  
-
 .imgproducts{
     grid-column: 1;
     grid-row: 2;
-    height: 130px;
-    width: 130px;
+    height: 150px;
+    width: 150px;
     margin-left: 10px;
 }
 .nameProduct{
@@ -56,39 +56,28 @@
 }
 .nameProduct h1{
     display: flex;
-    font-size: 15px;
+    font-size: 30px;
     justify-content: center;
+    margin-top: 10px;
 }
 .detailProducts{
     display: flex;
     grid-column: 2;
     grid-row: 2;
     flex-direction: column;
-    line-height: 2em;
+    text-align: left;
+    line-height: 2.5em;
 }
 
-.fav{
-    grid-column: 2;
-    grid-row: 3;
+.details u{
+  font-size: 20px;
+  font-weight: 600;
 }
-.isFavorite {
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg");
-    background-size: 100%;
-    cursor: pointer;
-    z-index: 2;
-  }
-  
-  .notFavorite {
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Ei-heart.svg");
-    background-size: 100%;
-    cursor: pointer;
-  }
+
+.details{
+  font-size: 20px;
+  font-weight: 600;
+}
 
 h1{
     font-size: 2rem;
@@ -108,7 +97,6 @@ h1{
 @media screen and (min-width: 767px){
 
   .card{
-  
       width: 30vw;
       height: 37vh;
       margin: 5 0 0 0;

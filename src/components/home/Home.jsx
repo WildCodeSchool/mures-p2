@@ -7,18 +7,6 @@ import scan from '../../assets/scan.jpeg';
 const Home = (props) => {
 
 return (
-<<<<<<< HEAD
-    <div className="home">
-    <section className="body" >
-        <div className="containerbutton">
-            <div className="buttonconnect">
-                <button className="button2">Je me connecte</button>
-            </div>
-        </div>
-    </section>
-    </div>
-
-=======
   
     <main className="home">
         <section className="body">
@@ -28,7 +16,6 @@ return (
                 </div>
         </section>
     </main>
->>>>>>> 263c8a96f87651eacff8cd8a97fbe884ae7965ae
 )
 }
 export default Home;

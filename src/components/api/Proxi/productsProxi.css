@@ -9,8 +9,7 @@
   border-radius:  30px;
   color: black;
   font-weight: 500;
-  transform: perspective(1000px) rotateY(var(--rotate-y, 0))
-    translateY(var(--translate-y, 0));
+
 }
 
 
@@ -41,8 +40,16 @@
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 30px;
   font-weight: bold;
+  color : #467302;
+}
+
+.nameProduct h1{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 @media screen and (min-width: 767px){
@@ -56,13 +63,14 @@
 }
 
 .titleFront{
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
+  transform: rotateY(0deg);
+  left: 0;
+  width: inherit;
+  height: inherit;
   color: #467302;
 }
 
-.icon{
-  color: #467302;
-}
 
+.front{
+  margin-top: 50px;
+}

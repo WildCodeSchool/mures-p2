@@ -18,8 +18,9 @@ function ProductsInfosBack( {product}) {
                 <h1>{product.product_name_fr} </h1>
             </div>
             <div className="detailProducts">
-                <p><u>Code barre </u>:  {product.code}</p>
-                <p><u>Marque </u>: {product.brands_tags}</p>
+                <p className="details"><u>Code barre </u>:  {product.code}</p>
+                <p className="details"><u>Marque </u>: {product.brands_tags}</p>
+                <p className="details"><u>Quantité</u>: {product.quantity}</p>
             </div>    
         </div>
     );

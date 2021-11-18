@@ -7,6 +7,7 @@
   border-radius: 10px;
   background-color:#FFDCBD ;
   background-size: cover;
+  color: #467302;
   box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
   transform-style: preserve-3d;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0))
@@ -17,11 +18,9 @@
 
 h1.text-center{
   display: flex;
-  font-size: 15px;
+  font-size: 30px;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  margin: 30px;
+  margin-top: 10px;
 }
 
 .isFavorite{
@@ -30,6 +29,7 @@ h1.text-center{
   height: 30px;
   margin: auto;
   margin-top: 10px;
+  color: #467302;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg");
   background-size: 100%;
   cursor: pointer;
@@ -41,6 +41,7 @@ h1.text-center{
   height: 30px;
   margin: auto;
   margin-top: 5px;
+  color: #467302;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Ei-heart.svg");
   background-size: 100%;
   cursor: pointer;
