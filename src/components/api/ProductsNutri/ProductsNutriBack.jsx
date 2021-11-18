@@ -27,7 +27,7 @@ export default function ProductsNutri({product}) {
                 </tr>
                 <tr>
                     <th className="caract">Groupe Nova : </th>
-                    <td className="td1-3">{product.nova_group}</td>         
+                    <td className="td1-3"><img className='nova-groupe' src={"https://fr.openfoodfacts.org/images/attributes/nova-group-" + product.nova_group + ".svg"} alt={''} /></td>         
                 </tr>
                 <tr>
                     <th className="caract">Nutriscore : </th>

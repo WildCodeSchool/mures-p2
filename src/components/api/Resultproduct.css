@@ -1,13 +1,14 @@
 
 body{
-    background: linear-gradient(rgba(185, 214, 122, 0.2), rgba(132,191,4,0.2)),
+    background: linear-gradient(rgba(197, 218, 152, 0.2), rgba(187, 211, 136, 0.2)),
     url(../../assets/home.jpg);
   background-repeat: no-repeat;
-  background-size: 3000px;
+  background-size: cover;
   background-position: center center;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 640px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .productName h1{

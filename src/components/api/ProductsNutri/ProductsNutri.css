@@ -24,9 +24,9 @@ td, th{
 .nutrition caption{
     margin-top: 10px;
     margin-bottom: 15px;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 700;
-    color: #467302;
+    color: #730217;
 }
 
 .caract{
@@ -44,6 +44,10 @@ td, th{
 
 .nutri-score{
     width: 100px;
+    height: 50px;
+}
+.nova-groupe{
+    width: 50px;
     height: 50px;
 }
 
@@ -68,6 +72,3 @@ td, th{
     color: #467302;
   }
 
-  .caption {
-      color: #467302 ;
-  }

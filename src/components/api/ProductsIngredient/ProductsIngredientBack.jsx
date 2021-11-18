@@ -2,6 +2,10 @@ import React from 'react'
 import "./ProductsIngredient.css";
 
 function ProductsIngredientBack({product}) {
+
+
+
+    
     return (
         <article className='alimentation'>
             <table>
@@ -13,10 +17,6 @@ function ProductsIngredientBack({product}) {
                 <tr>
                     <th className="caract">Allergènes : </th>
                     <td className="td2-4">{product.allergens}</td>
-                </tr>
-                <tr>
-                    <th className="caract">Catégories : </th>
-                    <td className="td1-3" id="categories">{product.categories_old}</td>
                 </tr>
             </table>
       </article>

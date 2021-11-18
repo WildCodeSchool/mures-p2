@@ -18,9 +18,16 @@
   .products-pack caption{
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 25px;
+    color: #730217;
     font-weight: bold;
+  }
+
+  .ecoscore{
+    width: 100px;
+    height: 50px;
 }
+
 @media screen and (min-width: 767px){
   .products-pack{
     margin-top: 80px;
@@ -43,7 +50,7 @@
   color: #467302;
 }
 
-caption{
-  
+.titleImpact{
+  font-size: 60px;
   color: #467302;
 }

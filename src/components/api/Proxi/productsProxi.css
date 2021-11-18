@@ -8,7 +8,8 @@
   border: 2px solid #FFFFFF;
   border-radius:  30px;
   color: black;
-  font-weight: 500;
+  font-weight: 500;  
+  cursor: pointer;
 
 }
 
@@ -42,14 +43,18 @@
   margin-bottom: 10px;
   font-size: 30px;
   font-weight: bold;
-  color : #467302;
+  color : #730217;
 }
 
-.nameProduct h1{
-    display: flex;
-    font-size: 30px;
-    justify-content: center;
-    margin-top: 20px;
+.store{
+  color : #467302;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.store u{
+  font-size: 16px;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 767px){

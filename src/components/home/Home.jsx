@@ -11,8 +11,8 @@ return (
     <main className="home">
         <section className="body">
             <h1 className="intro">"Chez M. Cheesecake, nous sommes engagés pour vous aider à mieux comprendre vos choix de consommation. Faites le test, en scannant ou recherchant votre produit."</h1>
-       <div className="img-container">
-                <a href='/ProductScan'><img className="scan-img" src={scan}></img></a>
+                <div className="img-container">
+                    <a href='/ProductScan'><img className="scan-img" src={scan}></img></a>
                 </div>
         </section>
     </main>

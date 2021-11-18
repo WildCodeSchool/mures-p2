@@ -3,7 +3,7 @@
   grid-row: 4;
   width: 95vw;
   height: 37vh;
-  margin-top: 30px;
+  margin-top: 20px;
   border-radius: 10px;
   background-color:#FFDCBD ;
   background-size: cover;
@@ -12,39 +12,15 @@
   transform-style: preserve-3d;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0))
   translateY(var(--translate-y, 0));
+  overflow: hidden;
 }
 
-
-
-h1.text-center{
+.text-center{
   display: flex;
-  font-size: 30px;
+  font-size: 25px;
   justify-content: center;
   margin-top: 10px;
-}
-
-.isFavorite{
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: auto;
-  margin-top: 10px;
-  color: #467302;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg");
-  background-size: 100%;
-  cursor: pointer;
-}
-  
-.notFavorite{
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: auto;
-  margin-top: 5px;
-  color: #467302;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Ei-heart.svg");
-  background-size: 100%;
-  cursor: pointer;
+  color: #730217;
 }
 
 .product-btn button{
@@ -65,6 +41,17 @@ button:active{
   background-color: #84BF04;
 }
 
+.detail u{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.detail{
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 @media screen and (min-width: 767px){
   .alternative{
 
@@ -83,6 +70,3 @@ button:active{
   color: #467302;
 }
 
-.icon{
-  color: #467302;
-}

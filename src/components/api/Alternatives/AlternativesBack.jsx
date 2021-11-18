@@ -52,10 +52,9 @@ function Alternatives({ product }) {
                             alternativeProduct && (
                                 <>
                                     <h1 className="text-center">{alternativeProduct.product_name}</h1>
-                                    <p><u>Code barre</u> : {alternativeProduct.code} </p>
-                                    <p><u>NutriScore</u> : {alternativeProduct.nutrition_grades}</p>
-                                    <p><u>Catégorie</u> : {alternativeProduct.categories}</p>
-                                    <p><u>Pays</u> : {alternativeProduct.countries}</p>
+                                    <p className="detail"><u>Code barre</u> : {alternativeProduct.code} </p>
+                                    <p className="detail"><u>Pays</u> : {alternativeProduct.countries}</p>
+                                    <p className="detail"> <img className='nutri-score' src={"https://fr.openfoodfacts.org/images/misc/nutriscore-" + product.nutrition_grade_fr + ".svg"} alt={''} /></p>
                                     <span
                                         id="favorite"
                                         className={isFavorite ? "isFavorite" : "notFavorite"}
