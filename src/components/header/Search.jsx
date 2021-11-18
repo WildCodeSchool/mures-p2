@@ -1,9 +1,6 @@
 import React from 'react';
 import { useState } from "react";
 import "./Search.css";
-import axios from 'axios';
-import Home from '../home/Home'
-
 
 function Search(props) {
 
