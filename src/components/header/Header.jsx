@@ -46,7 +46,7 @@ function Header(searchTerm) {
           </li>
           <li className="navbar_item slideInDown-3">
             <a href="/Contact" className="navbar_link">
-              Qui sommes nous
+              Qui sommes-nous?
             </a>
           </li>
         </ul>

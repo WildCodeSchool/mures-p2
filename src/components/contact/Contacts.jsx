@@ -17,27 +17,27 @@ function Contacts() {
                 <div className="wrapper">
                     <img className="imgContact" src={unnamed} alt="profile"/>
                     <div id="left-door" className="door"></div>
-                    <div id="right-door" class="door"></div> 
+                    <div id="right-door" className="door"></div> 
                 </div>
                 <div className="wrapper">
                     <img className="imgContact" src={paul} alt="profile"/>
                     <div id="left-door" className="door"></div>
-                    <div id="right-door" class="door"></div> 
+                    <div id="right-door" className="door"></div> 
                 </div>        
                 <div className="wrapper">
                     <img className="imgContact" src={sandra} alt="profile"/>
                     <div id="left-door" className="door"></div>
-                    <div id="right-door" class="door"></div> 
+                    <div id="right-door" className="door"></div> 
                 </div>        
                 <div className="wrapper">
                     <img className="imgContact" src={esteban} alt="profile"/>
                     <div id="left-door" className="door"></div>
-                    <div id="right-door" class="door"></div> 
+                    <div id="right-door" className="door"></div> 
                 </div>        
                 <div className="wrapper">
                     <img className="imgContact" src={lucille} alt="profile"/>
                     <div id="left-door" className="door"></div>
-                    <div id="right-door" class="door"></div> 
+                    <div id="right-door" className="door"></div> 
                 </div>
            </div>
             <div>

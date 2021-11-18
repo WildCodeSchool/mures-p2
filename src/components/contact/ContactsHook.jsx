@@ -9,6 +9,7 @@ function ContactsHook() {
     } = useForm();
     const onSubmit = (data) => {
         console.log(data);
+        alert("Votre message a bien été envoyé ! Merci, nous vous répondrons dès que possible.")
     }
     return (
         <form className="contactContainer" onSubmit={handleSubmit(onSubmit)}>
