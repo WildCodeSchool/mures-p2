@@ -109,5 +109,16 @@ color: #467302;
   width: 95vw;
   height: 37vh;
 }
+
+.titleFront{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #467302;
+}
+
+.nameProduct{
+  font-size: 20px;
+}
 }
 

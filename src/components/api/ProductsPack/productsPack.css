@@ -3,13 +3,12 @@
     grid-row: 5;
     width: 95vw;
     height: 37vh;
-    margin-top: 30px;
-    margin-left: 5px;
+
     border-radius: 10px;
     background-color:#FFDCBD ;
     background-size: cover;
     box-shadow: 7px 7px 1px 1px rgba(91, 91, 92, 0.2);
-
+  overflow: scroll;
     transform-style: preserve-3d;
     transform: perspective(1000px) rotateY(var(--rotate-y, 0))
     translateY(var(--translate-y, 0));
