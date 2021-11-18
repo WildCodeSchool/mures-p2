@@ -7,7 +7,7 @@
     height: 100vh;
     padding-left: 5px;
     padding-bottom: 80px;
-    background: linear-gradient(rgba(185, 214, 122, 0.2), rgba(132,191,4,0.2)),
+    background: linear-gradient(rgba(202, 223, 157, 0.2), rgba(185, 206, 139, 0.2)),
     url(../../assets/home.jpg);
   background-repeat: no-repeat;
   background-size: 3000px;
@@ -32,20 +32,4 @@
     grid-row: 2;
 }
 
-.scan-again-btn{
-   position: absolute;
-   top: 30rem;
-    margin: 0 auto;
-    width: 15rem;
-    height: 3rem;
-    color: white;
-    background-color: #467302;
-    border-radius: 10px;
-    font-weight: 500;
-  }
-  
-  .scan-again-btn:hover{
-    background-color: #84BF04;
-    cursor: pointer;
-  }
 
