@@ -17,7 +17,6 @@ function DisplayCode({ product }) {
     <div>
         
       <article className='DisplayCode'>
-     
                     <ProductsInfos product={product} />
                     <ProductsIngredient product={product} />
                     <ProductsNutri product={product} />

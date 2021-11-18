@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./ProductsIngredient.css";
 
 function ProductsIngredientBack({product}) {
 
-
+    let withoutEngBack = product.allergens.replaceAll('en:','');
 
     
     return (
@@ -16,7 +16,7 @@ function ProductsIngredientBack({product}) {
                 </tr>
                 <tr>
                     <th className="caract">Allergènes : </th>
-                    <td className="td2-4">{product.allergens}</td>
+                    <td className="td2-4">{withoutEngBack}</td>
                 </tr>
             </table>
       </article>

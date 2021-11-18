@@ -1,3 +1,4 @@
+
 .alternative{
   grid-column: 1;
   grid-row: 4;
@@ -69,4 +70,5 @@ button:active{
   font-weight: bold;
   color: #467302;
 }
+
 

@@ -8,7 +8,7 @@ function ProductsIngredients( {product} ) {
 
   const [ isFlipIng, setIsFlipIng ] = useState(false);
 
-  let withoutEng = product.allergens.replace('en:','');
+  let withoutEng = product.allergens.replaceAll('en:','');
 
   const alertAllergen = () => {
    if (product.allergens !== ''){

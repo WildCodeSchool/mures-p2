@@ -19,7 +19,7 @@ function ProductsInfosBack( {product}) {
             </div>
             <div className="detailProducts">
                 <p className="details"><u>Code barre </u>:  {product.code}</p>
-                <p className="details"><u>Marque </u>: {product.brands_tags}</p>
+                <p className="details"><u>Marque </u>: {product.brands}</p>
                 <p className="details"><u>Quantité</u>: {product.quantity}</p>
             </div>    
         </div>

@@ -14,7 +14,7 @@ function Alternatives({ product }) {
 
     const getOpenFoodFact = async () => {
         // Send the request 
-        const url = `https://fr.openfoodfacts.org/cgi/search.pl?action=process&search_terms=${ product.product_name }&tagtype_1=nutrition_grades&tag_contains_1=contains&json=true&fields=id,code,product_name,nutrition_grades,categories,countries&=`
+        const url = `https://fr.openfoodfacts.org/cgi/search.pl?action=process&search_terms=${ product.product_name }&tagtype_1=nutrition_grades&tag_contains_1=contains&json=true&fields=id,code,product_name,nutrition_grades,brands,countries&=`
         try {
             const response = await axios(url);
             const [alternativeProduct] = response.data.products.sort((a, b) => a?.nutrition_grades?.charCodeAt(0) - b?.nutrition_grades?.charCodeAt(0))
@@ -52,16 +52,12 @@ function Alternatives({ product }) {
                             alternativeProduct && (
                                 <>
                                     <h1 className="text-center">{alternativeProduct.product_name}</h1>
+                                    <div className="detailProduit">
                                     <p className="detail"><u>Code barre</u> : {alternativeProduct.code} </p>
-                                    <p className="detail"><u>Pays</u> : {alternativeProduct.countries}</p>
+                                    <p className="detail"><u>Marque </u>: {alternativeProduct.brands}</p>
                                     <p className="detail"> <img className='nutri-score' src={"https://fr.openfoodfacts.org/images/misc/nutriscore-" + product.nutrition_grade_fr + ".svg"} alt={''} /></p>
-                                    <span
-                                        id="favorite"
-                                        className={isFavorite ? "isFavorite" : "notFavorite"}
-                                        onClick={() => {
-                                            setIsFavorite(!isFavorite)
-                                        }}
-                                    />
+                                    </div>
+                                
                                     <div className="product-btn">
                                         <button onClick={handleRedirect} type="button">Voir fiche Produit</button>
                                     </div>

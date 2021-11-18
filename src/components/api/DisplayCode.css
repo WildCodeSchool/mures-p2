@@ -1,5 +1,7 @@
+
+  
 .DisplayCode{
-    padding-top: 70px;
+    padding-top: 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -9,9 +11,9 @@
     padding-bottom: 180px;
     background: linear-gradient(rgba(202, 223, 157, 0.2), rgba(185, 206, 139, 0.2)),
     url(../../assets/home.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 @media screen and (min-width: 767px){

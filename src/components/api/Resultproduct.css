@@ -2,7 +2,7 @@
 body{
     background: linear-gradient(rgba(197, 218, 152, 0.2), rgba(187, 211, 136, 0.2)),
     url(../../assets/home.jpg);
-  background-repeat: no-repeat;
+
   background-size: cover;
   background-position: center center;
   width: 100%;
