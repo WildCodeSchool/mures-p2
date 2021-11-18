@@ -3,14 +3,66 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*Body Content Start */
+/* ************ */
+/* ******** */
+/* *****/
+/* * */
 
 .allPageContact{
-    height: 100vh;
     width: 100%;
-    background-color: gray;
-    display: flex;
+    background-color: white;
+    display: block;
     justify-content: center;
     align-items: center;
+}
+
+.p1 {
+  color: #bf1650;
+}
+
+.p1::before {
+  display: inline;
+  content: "⚠";
+}
+
+.p2 {
+  color: #bf1650;
+}
+
+.p2::before {
+  display: inline;
+  content: "⚠";
+}
+
+.healthier {
+  color: #467302;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.whoWeAre {
+    color: #467302;
+}
+/* ***** */
+/* ******* */
+/* ********** */
+/* ************** */
+/* Body element end */
+
+
+
+
+
+/* Door elements start */
+/* ************ */
+/* ******** */
+/* *****/
+/* * */
+.doorContainer {
+  display: flex;
+  justify-content: space-between; 
 }
 
 .wrapper {
@@ -32,7 +84,6 @@
     height: 100%;
     width: 50%;
     position: absolute;
-    /* iner layout */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -52,7 +103,6 @@
     top: 0;
     left: 0;
     border-right: 1px solid black;
-    /* transition */
     transform-origin: left;
     transition: transform 0.5s;
   }
@@ -61,11 +111,20 @@
     top: 0;
     right: 0;
     border-left: 1px solid black;
-    /* transition */
     transform-origin: right;
     transition: transform 0.5s;
   }
-  
+  /* ***** */
+  /* ******* */
+  /* ********** */
+  /* ************** */
+  /* Body element end */
+
+  /*Contact area  Start*/
+  /* ************ */
+  /* ******** */
+  /* *****/
+  /* * */
   .contactsHooksStyle {
     padding: 8rem;
     background-color: #467302;
@@ -85,40 +144,6 @@
     margin-bottom: 10px;
     font-size: 14px;
   }
-  
-  .doorContainer {
-    display: flex;
-    justify-content: space-between; 
-  }
-  
-  .p1 {
-    color: #bf1650;
-  }
-  
-  .p1::before {
-    display: inline;
-    content: "⚠";
-  }
-  
-  .p2 {
-    color: #bf1650;
-  }
-  
-  .p2::before {
-    display: inline;
-    content: "⚠";
-  }
-  
-  .healthier {
-    color: #467302;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-  }
-
-  .whoWeAre {
-      color: #467302;
-  }
 
   .contactContainer {
     max-width: 400px;
@@ -127,7 +152,21 @@
     justify-content: center;
     flex-direction: column;
   }
+  /* ***** */
+  /* ******* */
+  /* ********** */
+  /* ************** */
+  /* Contact element end */
   
+
+
+  
+  /* Button element start */
+  /* ************ */
+  /* ******** */
+  /* *****/
+  /* ***/
+
   .submitContact[type="submit"] {
     background: #84bf04;
     color: white;
@@ -141,10 +180,20 @@
     letter-spacing: 10px;
   }
   
+  
   .submitContact[type="submit"]:hover {
     background: #f2994b;
   }
-  
+  /* ***** */
+  /* ******* */
+  /* ********** */
+  /* ************** */
+  /* Button element end */
+  /* ************ */
+  /* ******** */
+  /* *****/
+  /* * */
+
   @media screen and (max-width: 767px) {
     .doorContainer {
         display: flex;
