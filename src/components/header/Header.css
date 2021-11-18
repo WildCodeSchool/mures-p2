@@ -95,6 +95,7 @@
     position: fixed;
     top: 1rem;
     right: 1rem;
+    cursor: pointer;
 }
 .navbar_burger:hover{
     cursor: pointer;
