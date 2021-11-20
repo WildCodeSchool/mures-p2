@@ -16,10 +16,10 @@ export default function ProductsProxi({ product }) {
     console.log(lat, lon);
     product.stores === '' ?
     window.open(
-      `https://www.google.fr/maps/search/carrefour/@${lat},${lon},13z`
+      `https://www.google.fr/maps/search/carrefour/@${lat},${lon},10z`
     ) :
     window.open(
-      `https://www.google.fr/maps/search/${product.stores}/@${lat},${lon},13z`
+      `https://www.google.fr/maps/search/${product.stores}/@${lat},${lon},10z`
     );
   };
 

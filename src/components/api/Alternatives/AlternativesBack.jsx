@@ -44,6 +44,7 @@ function Alternatives({ product }) {
         }
     }, [product])
 
+
     return (
             <article className="alternative">
                 <div className="info-product">
@@ -55,9 +56,9 @@ function Alternatives({ product }) {
                                     <div className="detailProduit">
                                     <p className="detail"><u>Code barre</u> : {alternativeProduct.code} </p>
                                     <p className="detail"><u>Marque </u>: {alternativeProduct.brands}</p>
-                                    <p className="detail"> <img className='nutri-score' src={"https://fr.openfoodfacts.org/images/misc/nutriscore-" + product.nutrition_grade_fr + ".svg"} alt={''} /></p>
+                                    <p className="detail"> <img className='nutri-score' src={`https://fr.openfoodfacts.org/images/misc/nutriscore-${alternativeProduct.nutrition_grades}.svg`} alt={''} /></p>
                                     </div>
-                                
+
                                     <div className="product-btn">
                                         <button onClick={handleRedirect} type="button">Voir fiche Produit</button>
                                     </div>
